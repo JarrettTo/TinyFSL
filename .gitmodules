@@ -1,0 +1,3 @@
+[submodule "slt"]
+	path = slt
+	url = https://github.com/neccam/slt.git
