@@ -25,4 +25,4 @@ RUN pip install --no-cache-dir pip==23.3.2 \
 COPY . /app
 
 # Install Python dependencies specified in requirements.txt
-RUN pip install --no-cache-dir -r slt/requirements.txt
+RUN pip install --no-cache-dir -r changed_files/requirements.txt

@@ -12,4 +12,4 @@ else
 fi
 
 # Run the Python command inside the container
-docker run -it docker-image python -m slt.signjoey train configs/sign.yaml
+docker run -it docker-image python -m slt.signjoey train changed_files/sign.yaml
