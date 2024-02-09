@@ -1,13 +1,13 @@
 name: sign_experiment
 data:
-    data_path: ./
+    data_path: ./inception/
     version: phoenix_2014_trans
     sgn: sign
     txt: text
     gls: gloss
-    train: phoenix14t.pami0.train
-    dev: phoenix14t.pami0.dev
-    test: phoenix14t.pami0.test
+    train: phoenix.inception.train.gz
+    dev: phoenix.inception.dev.gz
+    test: phoenix.inception.test.gz
     feature_size: 1024
     level: word
     txt_lowercase: true

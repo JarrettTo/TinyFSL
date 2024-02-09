@@ -8,9 +8,9 @@ def load_dataset_file(filename):
         print("HI  :", loaded_object)
 
         # Save the loaded object to a text file
-        with open('loaded_object.txt', 'w') as txt_file:
+        with open('./notes/check_mobilenet.txt', 'w') as txt_file:
             txt_file.write(str(loaded_object))
         
         return loaded_object
 
-load_dataset_file('phoenix14t.pami0.test')
+load_dataset_file('./mobilenet/phoenix.mobilenet.dev.gz')

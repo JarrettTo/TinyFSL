@@ -1,15 +1,10 @@
 #!/bin/bash
 
-# Build the Docker image
-docker build -t docker-image .
+# Use the absolute path to your project directory
+PROJECT_PATH="/home/jupyter-alyanna_mari_abalo-e312b/TinyFSL"
 
-# Check if the build was successful
-if [ $? -eq 0 ]; then
-    echo "Docker image has been successfully built."
-else
-    echo "Failed to build the Docker image. Check the build logs for more details."
-    exit 1  # Exit the script with an error code
-fi
+# Set PYTHONPATH to include the "slt" directory within your project
+export PYTHONPATH="${PROJECT_PATH}/slt:${PYTHONPATH}"
 
-# Run the Python command inside the container
-docker run -it docker-image python -m slt.signjoey train changed_files/sign.yaml
+# Run your Python module command
+python -m slt.signjoey train changed_files/mobilenet.yaml
