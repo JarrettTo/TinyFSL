@@ -33,10 +33,10 @@ def main():
 
     # Here you would add the rest of your script logic,
     # using args.data and args.size where necessary
-    base_dir = './dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/features/fullFrame-210x260px/dev/'
+    base_dir = './dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/features/fullFrame-210x260px/{args.data}/'
 
     # Load the CSV file and split the data
-    csv_file_path = './dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/annotations/manual/PHOENIX-2014-T.dev.corpus.csv'  # Update with the actual path
+    csv_file_path = './dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/annotations/manual/PHOENIX-2014-T.{args.data}.corpus.csv'  # Update with the actual path
     data = pd.read_csv(csv_file_path, sep='|')  # Use the correct separator
     split_data = data
     data_to_save = []
@@ -46,12 +46,12 @@ def main():
     speakers = split_data['speaker'].tolist()
     sequence_glosses = split_data['orth'].tolist()
     text_translations = split_data['translation'].tolist()
-    prefix = "./dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/features/fullFrame-210x260px/dev/"
+    prefix = "./dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/features/fullFrame-210x260px/{args.data}/"
     image_sequence_paths = [path.replace('/1', '') for path in image_sequence_paths_temp]
 
     base_model = create_model(weights='imagenet', include_top=False)
     x = GlobalAveragePooling2D()(base_model.output)
-    x = Dense(1024, activation='relu')(x)
+    x = Dense(args.size, activation='relu')(x)
     custom_model = Model(inputs=base_model.input, outputs=x)
 
 
@@ -78,7 +78,7 @@ def main():
 
 
     # Save to CSV
-    pickle_file = 'phoenix.inceptionv4.train.gz'
+    pickle_file = 'phoenix.inceptionv4.${args.data}.gz'
     with gzip.open(pickle_file, 'wb') as f:
         pickle.dump(data_to_save, f)
 
