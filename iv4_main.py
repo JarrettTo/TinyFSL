@@ -24,24 +24,30 @@ def preprocess_frame(frame):
     frame = preprocess_input(frame)  # Preprocess for InceptionV4
     return frame
     
-def extract_and_aggregate_features(model, image_paths):
+def extract_features(model, image_paths):
     features = []
     for img_path in image_paths:
         frame = cv2.imread(img_path)
         processed_frame = preprocess_frame(frame)
         feature = model.predict(processed_frame)
-        features.append(feature)
-    aggregated_features = np.mean(np.array(features), axis=0)
-    return aggregated_features
+        features.append(feature.squeeze())  # Remove single-dimensional entries
+    features = np.array(features)
+    if features.shape[0] > 42:
+        features = features[:42]  # Ensure only 42 frames are used
+    elif features.shape[0] < 42:
+        # Handle case where there are less than 42 frames
+        # This could involve padding or selecting a different set of frames
+        pass
+    return features
     
 
 
 
 
-base_dir = './dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/features/fullFrame-210x260px/test/'
+base_dir = './dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/features/fullFrame-210x260px/dev/'
 
 # Load the CSV file and split the data
-csv_file_path = './dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/annotations/manual/PHOENIX-2014-T.test.corpus.csv'  # Update with the actual path
+csv_file_path = './dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/annotations/manual/PHOENIX-2014-T.dev.corpus.csv'  # Update with the actual path
 data = pd.read_csv(csv_file_path, sep='|')  # Use the correct separator
 split_data = data
 data_to_save = []
@@ -49,7 +55,7 @@ data_to_save = []
 image_sequence_paths_temp = split_data['video'].tolist()
 sequence_glosses = split_data['orth'].tolist()
 text_translations = split_data['translation'].tolist()
-prefix = "./dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/features/fullFrame-210x260px/test/"
+prefix = "./dataset/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/features/fullFrame-210x260px/dev/"
 image_sequence_paths = [path.replace('/1', '') for path in image_sequence_paths_temp]
 
 base_model = create_model(weights='imagenet', include_top=False)
@@ -58,15 +64,17 @@ x = Dense(2560, activation='relu')(x)
 custom_model = Model(inputs=base_model.input, outputs=x)
 
 
-for i,img_path in enumerate(image_sequence_paths[:5]):
+for i,img_path in enumerate(image_sequence_paths):
     full_path = os.path.join(base_dir, img_path)
-
+                                                                       
 
     images = glob.glob(full_path)
     if images:
-        aggregated_features = extract_and_aggregate_features(custom_model, images)
+        aggregated_features = extract_features(custom_model, images)
+        print(aggregated_features.shape)
+        features_string = ' '.join([f'{num:.17g}' for num in aggregated_features.flatten()])  # Convert array to string
         data_to_save.append({
-            "features": aggregated_features.flatten(),  # Flatten the features if they are multi-dimensional
+            "features": features_string,  # Store features as a string
             "gloss": sequence_glosses[i],
             "translation": text_translations[i]
         })
@@ -77,8 +85,9 @@ for i,img_path in enumerate(image_sequence_paths[:5]):
 df = pd.DataFrame(data_to_save)
 
 # Save to CSV
-csv_file = 'aggregated_features.csv'
-df.to_csv(csv_file, index=False)
+csv_file = 'dev_aggregated_features.csv'
+
+df.to_csv(csv_file, index=False, float_format='%.17g')
 print(f"Data saved to {csv_file}")
 
     
