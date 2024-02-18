@@ -69,7 +69,7 @@ def main():
                 "gloss": sequence_glosses[i],
                 "text": text_translations[i],
                 "name": names[i],
-                "speakers": speakers[i]
+                "signer": speakers[i]
             })
             
         else:
