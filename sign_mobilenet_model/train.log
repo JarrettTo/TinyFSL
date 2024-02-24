@@ -1,0 +1,1593 @@
+2024-02-23 05:02:57,696 Hello! This is Joey-NMT.
+2024-02-23 05:02:57,782 Total params: 26113087
+2024-02-23 05:02:57,788 Trainable parameters: ['decoder.layer_norm.bias', 'decoder.layer_norm.weight', 'decoder.layers.0.dec_layer_norm.bias', 'decoder.layers.0.dec_layer_norm.weight', 'decoder.layers.0.feed_forward.layer_norm.bias', 'decoder.layers.0.feed_forward.layer_norm.weight', 'decoder.layers.0.feed_forward.pwff_layer.0.bias', 'decoder.layers.0.feed_forward.pwff_layer.0.weight', 'decoder.layers.0.feed_forward.pwff_layer.3.bias', 'decoder.layers.0.feed_forward.pwff_layer.3.weight', 'decoder.layers.0.src_trg_att.k_layer.bias', 'decoder.layers.0.src_trg_att.k_layer.weight', 'decoder.layers.0.src_trg_att.output_layer.bias', 'decoder.layers.0.src_trg_att.output_layer.weight', 'decoder.layers.0.src_trg_att.q_layer.bias', 'decoder.layers.0.src_trg_att.q_layer.weight', 'decoder.layers.0.src_trg_att.v_layer.bias', 'decoder.layers.0.src_trg_att.v_layer.weight', 'decoder.layers.0.trg_trg_att.k_layer.bias', 'decoder.layers.0.trg_trg_att.k_layer.weight', 'decoder.layers.0.trg_trg_att.output_layer.bias', 'decoder.layers.0.trg_trg_att.output_layer.weight', 'decoder.layers.0.trg_trg_att.q_layer.bias', 'decoder.layers.0.trg_trg_att.q_layer.weight', 'decoder.layers.0.trg_trg_att.v_layer.bias', 'decoder.layers.0.trg_trg_att.v_layer.weight', 'decoder.layers.0.x_layer_norm.bias', 'decoder.layers.0.x_layer_norm.weight', 'decoder.layers.1.dec_layer_norm.bias', 'decoder.layers.1.dec_layer_norm.weight', 'decoder.layers.1.feed_forward.layer_norm.bias', 'decoder.layers.1.feed_forward.layer_norm.weight', 'decoder.layers.1.feed_forward.pwff_layer.0.bias', 'decoder.layers.1.feed_forward.pwff_layer.0.weight', 'decoder.layers.1.feed_forward.pwff_layer.3.bias', 'decoder.layers.1.feed_forward.pwff_layer.3.weight', 'decoder.layers.1.src_trg_att.k_layer.bias', 'decoder.layers.1.src_trg_att.k_layer.weight', 'decoder.layers.1.src_trg_att.output_layer.bias', 'decoder.layers.1.src_trg_att.output_layer.weight', 'decoder.layers.1.src_trg_att.q_layer.bias', 'decoder.layers.1.src_trg_att.q_layer.weight', 'decoder.layers.1.src_trg_att.v_layer.bias', 'decoder.layers.1.src_trg_att.v_layer.weight', 'decoder.layers.1.trg_trg_att.k_layer.bias', 'decoder.layers.1.trg_trg_att.k_layer.weight', 'decoder.layers.1.trg_trg_att.output_layer.bias', 'decoder.layers.1.trg_trg_att.output_layer.weight', 'decoder.layers.1.trg_trg_att.q_layer.bias', 'decoder.layers.1.trg_trg_att.q_layer.weight', 'decoder.layers.1.trg_trg_att.v_layer.bias', 'decoder.layers.1.trg_trg_att.v_layer.weight', 'decoder.layers.1.x_layer_norm.bias', 'decoder.layers.1.x_layer_norm.weight', 'decoder.layers.2.dec_layer_norm.bias', 'decoder.layers.2.dec_layer_norm.weight', 'decoder.layers.2.feed_forward.layer_norm.bias', 'decoder.layers.2.feed_forward.layer_norm.weight', 'decoder.layers.2.feed_forward.pwff_layer.0.bias', 'decoder.layers.2.feed_forward.pwff_layer.0.weight', 'decoder.layers.2.feed_forward.pwff_layer.3.bias', 'decoder.layers.2.feed_forward.pwff_layer.3.weight', 'decoder.layers.2.src_trg_att.k_layer.bias', 'decoder.layers.2.src_trg_att.k_layer.weight', 'decoder.layers.2.src_trg_att.output_layer.bias', 'decoder.layers.2.src_trg_att.output_layer.weight', 'decoder.layers.2.src_trg_att.q_layer.bias', 'decoder.layers.2.src_trg_att.q_layer.weight', 'decoder.layers.2.src_trg_att.v_layer.bias', 'decoder.layers.2.src_trg_att.v_layer.weight', 'decoder.layers.2.trg_trg_att.k_layer.bias', 'decoder.layers.2.trg_trg_att.k_layer.weight', 'decoder.layers.2.trg_trg_att.output_layer.bias', 'decoder.layers.2.trg_trg_att.output_layer.weight', 'decoder.layers.2.trg_trg_att.q_layer.bias', 'decoder.layers.2.trg_trg_att.q_layer.weight', 'decoder.layers.2.trg_trg_att.v_layer.bias', 'decoder.layers.2.trg_trg_att.v_layer.weight', 'decoder.layers.2.x_layer_norm.bias', 'decoder.layers.2.x_layer_norm.weight', 'decoder.output_layer.weight', 'encoder.layer_norm.bias', 'encoder.layer_norm.weight', 'encoder.layers.0.feed_forward.layer_norm.bias', 'encoder.layers.0.feed_forward.layer_norm.weight', 'encoder.layers.0.feed_forward.pwff_layer.0.bias', 'encoder.layers.0.feed_forward.pwff_layer.0.weight', 'encoder.layers.0.feed_forward.pwff_layer.3.bias', 'encoder.layers.0.feed_forward.pwff_layer.3.weight', 'encoder.layers.0.layer_norm.bias', 'encoder.layers.0.layer_norm.weight', 'encoder.layers.0.src_src_att.k_layer.bias', 'encoder.layers.0.src_src_att.k_layer.weight', 'encoder.layers.0.src_src_att.output_layer.bias', 'encoder.layers.0.src_src_att.output_layer.weight', 'encoder.layers.0.src_src_att.q_layer.bias', 'encoder.layers.0.src_src_att.q_layer.weight', 'encoder.layers.0.src_src_att.v_layer.bias', 'encoder.layers.0.src_src_att.v_layer.weight', 'encoder.layers.1.feed_forward.layer_norm.bias', 'encoder.layers.1.feed_forward.layer_norm.weight', 'encoder.layers.1.feed_forward.pwff_layer.0.bias', 'encoder.layers.1.feed_forward.pwff_layer.0.weight', 'encoder.layers.1.feed_forward.pwff_layer.3.bias', 'encoder.layers.1.feed_forward.pwff_layer.3.weight', 'encoder.layers.1.layer_norm.bias', 'encoder.layers.1.layer_norm.weight', 'encoder.layers.1.src_src_att.k_layer.bias', 'encoder.layers.1.src_src_att.k_layer.weight', 'encoder.layers.1.src_src_att.output_layer.bias', 'encoder.layers.1.src_src_att.output_layer.weight', 'encoder.layers.1.src_src_att.q_layer.bias', 'encoder.layers.1.src_src_att.q_layer.weight', 'encoder.layers.1.src_src_att.v_layer.bias', 'encoder.layers.1.src_src_att.v_layer.weight', 'encoder.layers.2.feed_forward.layer_norm.bias', 'encoder.layers.2.feed_forward.layer_norm.weight', 'encoder.layers.2.feed_forward.pwff_layer.0.bias', 'encoder.layers.2.feed_forward.pwff_layer.0.weight', 'encoder.layers.2.feed_forward.pwff_layer.3.bias', 'encoder.layers.2.feed_forward.pwff_layer.3.weight', 'encoder.layers.2.layer_norm.bias', 'encoder.layers.2.layer_norm.weight', 'encoder.layers.2.src_src_att.k_layer.bias', 'encoder.layers.2.src_src_att.k_layer.weight', 'encoder.layers.2.src_src_att.output_layer.bias', 'encoder.layers.2.src_src_att.output_layer.weight', 'encoder.layers.2.src_src_att.q_layer.bias', 'encoder.layers.2.src_src_att.q_layer.weight', 'encoder.layers.2.src_src_att.v_layer.bias', 'encoder.layers.2.src_src_att.v_layer.weight', 'gloss_output_layer.bias', 'gloss_output_layer.weight', 'sgn_embed.ln.bias', 'sgn_embed.ln.weight', 'sgn_embed.norm.norm.bias', 'sgn_embed.norm.norm.weight', 'txt_embed.lut.weight', 'txt_embed.norm.norm.bias', 'txt_embed.norm.norm.weight']
+2024-02-23 05:03:57,776 cfg.name                           : sign_experiment
+2024-02-23 05:03:57,777 cfg.data.data_path                 : ./mobilenet/
+2024-02-23 05:03:57,777 cfg.data.version                   : phoenix_2014_trans
+2024-02-23 05:03:57,798 cfg.data.sgn                       : sign
+2024-02-23 05:03:57,799 cfg.data.txt                       : text
+2024-02-23 05:03:57,799 cfg.data.gls                       : gloss
+2024-02-23 05:03:57,799 cfg.data.train                     : phoenix.mobilenetv3.train.gz
+2024-02-23 05:03:57,799 cfg.data.dev                       : phoenix.mobilenetv3.dev.gz
+2024-02-23 05:03:57,799 cfg.data.test                      : phoenix.mobilenetv3.test.gz
+2024-02-23 05:03:57,799 cfg.data.feature_size              : 1024
+2024-02-23 05:03:57,799 cfg.data.level                     : word
+2024-02-23 05:03:57,799 cfg.data.txt_lowercase             : True
+2024-02-23 05:03:57,800 cfg.data.max_sent_length           : 400
+2024-02-23 05:03:57,800 cfg.data.random_train_subset       : -1
+2024-02-23 05:03:57,800 cfg.data.random_dev_subset         : -1
+2024-02-23 05:03:57,800 cfg.testing.recognition_beam_sizes : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+2024-02-23 05:03:57,800 cfg.testing.translation_beam_sizes : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+2024-02-23 05:03:57,800 cfg.testing.translation_beam_alphas : [-1, 0, 1, 2, 3, 4, 5]
+2024-02-23 05:03:57,800 cfg.training.reset_best_ckpt       : False
+2024-02-23 05:03:57,800 cfg.training.reset_scheduler       : False
+2024-02-23 05:03:57,800 cfg.training.reset_optimizer       : False
+2024-02-23 05:03:57,801 cfg.training.random_seed           : 42
+2024-02-23 05:03:57,801 cfg.training.model_dir             : ./sign_mobilenet_model
+2024-02-23 05:03:57,801 cfg.training.recognition_loss_weight : 1.0
+2024-02-23 05:03:57,801 cfg.training.translation_loss_weight : 1.0
+2024-02-23 05:03:57,801 cfg.training.eval_metric           : bleu
+2024-02-23 05:03:57,801 cfg.training.optimizer             : adam
+2024-02-23 05:03:57,801 cfg.training.learning_rate         : 0.001
+2024-02-23 05:03:57,801 cfg.training.batch_size            : 32
+2024-02-23 05:03:57,801 cfg.training.num_valid_log         : 5
+2024-02-23 05:03:57,801 cfg.training.epochs                : 5000000
+2024-02-23 05:03:57,802 cfg.training.early_stopping_metric : eval_metric
+2024-02-23 05:03:57,802 cfg.training.batch_type            : sentence
+2024-02-23 05:03:57,802 cfg.training.translation_normalization : batch
+2024-02-23 05:03:57,802 cfg.training.eval_recognition_beam_size : 1
+2024-02-23 05:03:57,802 cfg.training.eval_translation_beam_size : 1
+2024-02-23 05:03:57,802 cfg.training.eval_translation_beam_alpha : -1
+2024-02-23 05:03:57,802 cfg.training.overwrite             : True
+2024-02-23 05:03:57,802 cfg.training.shuffle               : True
+2024-02-23 05:03:57,802 cfg.training.use_cuda              : True
+2024-02-23 05:03:57,802 cfg.training.translation_max_output_length : 30
+2024-02-23 05:03:57,802 cfg.training.keep_last_ckpts       : 1
+2024-02-23 05:03:57,802 cfg.training.batch_multiplier      : 1
+2024-02-23 05:03:57,802 cfg.training.logging_freq          : 100
+2024-02-23 05:03:57,802 cfg.training.validation_freq       : 100
+2024-02-23 05:03:57,802 cfg.training.betas                 : [0.9, 0.998]
+2024-02-23 05:03:57,802 cfg.training.scheduling            : plateau
+2024-02-23 05:03:57,803 cfg.training.learning_rate_min     : 1e-07
+2024-02-23 05:03:57,803 cfg.training.weight_decay          : 0.001
+2024-02-23 05:03:57,803 cfg.training.patience              : 8
+2024-02-23 05:03:57,803 cfg.training.decrease_factor       : 0.7
+2024-02-23 05:03:57,803 cfg.training.label_smoothing       : 0.0
+2024-02-23 05:03:57,803 cfg.model.initializer              : xavier
+2024-02-23 05:03:57,803 cfg.model.bias_initializer         : zeros
+2024-02-23 05:03:57,803 cfg.model.init_gain                : 1.0
+2024-02-23 05:03:57,803 cfg.model.embed_initializer        : xavier
+2024-02-23 05:03:57,803 cfg.model.embed_init_gain          : 1.0
+2024-02-23 05:03:57,803 cfg.model.tied_softmax             : False
+2024-02-23 05:03:57,803 cfg.model.encoder.type             : transformer
+2024-02-23 05:03:57,803 cfg.model.encoder.num_layers       : 3
+2024-02-23 05:03:57,803 cfg.model.encoder.num_heads        : 8
+2024-02-23 05:03:57,804 cfg.model.encoder.embeddings.embedding_dim : 512
+2024-02-23 05:03:57,804 cfg.model.encoder.embeddings.scale : False
+2024-02-23 05:03:57,804 cfg.model.encoder.embeddings.dropout : 0.1
+2024-02-23 05:03:57,804 cfg.model.encoder.embeddings.norm_type : batch
+2024-02-23 05:03:57,804 cfg.model.encoder.embeddings.activation_type : softsign
+2024-02-23 05:03:57,804 cfg.model.encoder.hidden_size      : 512
+2024-02-23 05:03:57,804 cfg.model.encoder.ff_size          : 2048
+2024-02-23 05:03:57,804 cfg.model.encoder.dropout          : 0.1
+2024-02-23 05:03:57,804 cfg.model.decoder.type             : transformer
+2024-02-23 05:03:57,804 cfg.model.decoder.num_layers       : 3
+2024-02-23 05:03:57,804 cfg.model.decoder.num_heads        : 8
+2024-02-23 05:03:57,804 cfg.model.decoder.embeddings.embedding_dim : 512
+2024-02-23 05:03:57,804 cfg.model.decoder.embeddings.scale : False
+2024-02-23 05:03:57,804 cfg.model.decoder.embeddings.dropout : 0.1
+2024-02-23 05:03:57,804 cfg.model.decoder.embeddings.norm_type : batch
+2024-02-23 05:03:57,804 cfg.model.decoder.embeddings.activation_type : softsign
+2024-02-23 05:03:57,804 cfg.model.decoder.hidden_size      : 512
+2024-02-23 05:03:57,804 cfg.model.decoder.ff_size          : 2048
+2024-02-23 05:03:57,804 cfg.model.decoder.dropout          : 0.1
+2024-02-23 05:03:57,805 Data set sizes: 
+	train 7095,
+	valid 519,
+	test 642
+2024-02-23 05:03:57,805 First training example:
+	[GLS] JETZT WETTER MORGEN DONNERSTAG ZWOELF FEBRUAR
+	[TXT] und nun die wettervorhersage für morgen donnerstag den zwölften august
+2024-02-23 05:03:57,805 First 10 words (gls): (0) <si> (1) <unk> (2) <pad> (3) REGEN (4) REGION (5) IX (6) KOMMEN (7) MORGEN (8) NORD (9) SONNE
+2024-02-23 05:03:57,805 First 10 words (txt): (0) <unk> (1) <pad> (2) <s> (3) </s> (4) und (5) im (6) es (7) der (8) am (9) in
+2024-02-23 05:03:57,806 Number of unique glosses (types): 1087
+2024-02-23 05:03:57,806 Number of unique words (types): 2888
+2024-02-23 05:03:57,806 SignModel(
+	encoder=TransformerEncoder(num_layers=3, num_heads=8),
+	decoder=TransformerDecoder(num_layers=3, num_heads=8),
+	sgn_embed=SpatialEmbeddings(embedding_dim=512, input_size=1024),
+	txt_embed=Embeddings(embedding_dim=512, vocab_size=2888))
+2024-02-23 05:03:57,839 EPOCH 1
+2024-02-23 05:08:09,248 [Epoch: 001 Step: 00000100] Batch Recognition Loss:   5.427733 => Gls Tokens per Sec:       99 || Batch Translation Loss:  62.839779 => Txt Tokens per Sec:      190 || Lr: 0.001000
+2024-02-23 05:10:43,140 Hooray! New best validation result [eval_metric]!
+2024-02-23 05:10:43,142 Saving new checkpoint.
+2024-02-23 05:10:48,212 Validation result at epoch   1, step      100: duration: 158.9618s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 95.37160	Translation Loss: 34533.05469	PPL: 110.54434
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 3.61	(BLEU-1: 9.91,	BLEU-2: 5.43,	BLEU-3: 4.22,	BLEU-4: 3.61)
+	CHRF 19.44	ROUGE 11.85
+2024-02-23 05:10:48,250 Logging Recognition and Translation Outputs
+2024-02-23 05:10:48,251 ========================================================================================================================
+2024-02-23 05:10:48,251 Logging Sequence: 10March_2011_Thursday_heute-51
+2024-02-23 05:10:48,253 	Gloss Reference :	SUEDWEST KOMMEN WARM MORGEN SCHON FRANKREICH REGION FUENFZEHN BIS ZWANZIG GRAD WOCHENENDE KOMMEN WARM
+2024-02-23 05:10:48,263 	Gloss Hypothesis:	******** ****** **** ****** ***** ********** ****** ********* *** ******* **** ********** ****** ****
+2024-02-23 05:10:48,264 	Gloss Alignment :	D        D      D    D      D     D          D      D         D   D       D    D          D      D   
+2024-02-23 05:10:48,264 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:10:48,270 	Text Reference  :	es wird wärmer aus dem südwesten morgen haben wir schon über frankreich die fünfzehn bis zwanzig grad und am wochenende kommt diese            wärme langsam auch    zu  uns  
+2024-02-23 05:10:48,272 	Text Hypothesis :	** **** ****** *** *** ********* ****** ***** *** ***** **** ********** *** ******** *** ******* **** und ** nun        die   wettervorhersage für   morgen  samstag den alpen
+2024-02-23 05:10:48,272 	Text Alignment  :	D  D    D      D   D   D         D      D     D   D     D    D          D   D        D   D       D        D  S          S     S                S     S       S       S   S    
+2024-02-23 05:10:48,273 ========================================================================================================================
+2024-02-23 05:10:48,273 Logging Sequence: 28November_2011_Monday_heute-1587
+2024-02-23 05:10:48,274 	Gloss Reference :	AUCH MORGEN WETTER SUPER neg-HABEN FUENF GRAD NORDOST MILD WO SUEDWEST
+2024-02-23 05:10:48,274 	Gloss Hypothesis:	**** ****** ****** ***** ********* ***** **** ******* **** ** ********
+2024-02-23 05:10:48,274 	Gloss Alignment :	D    D      D      D     D         D     D    D       D    D  D       
+2024-02-23 05:10:48,274 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:10:48,277 	Text Reference  :	morgen gibt es dann keine großen überraschungen fünf grad im  nordosten am               mildesten wird   es      im  südwesten
+2024-02-23 05:10:48,278 	Text Hypothesis :	****** **** ** **** ***** ****** ************** **** und  nun die       wettervorhersage für       morgen samstag den alpen    
+2024-02-23 05:10:48,278 	Text Alignment  :	D      D    D  D    D     D      D              D    S    S   S         S                S         S      S       S   S        
+2024-02-23 05:10:48,278 ========================================================================================================================
+2024-02-23 05:10:48,278 Logging Sequence: 07April_2010_Wednesday_heute-1631
+2024-02-23 05:10:48,278 	Gloss Reference :	FREUNDLICH BLEIBEN REGION SUED BISSCHEN SCHAUER
+2024-02-23 05:10:48,279 	Gloss Hypothesis:	********** ******* ****** **** ******** *******
+2024-02-23 05:10:48,279 	Gloss Alignment :	D          D       D      D    D        D      
+2024-02-23 05:10:48,279 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:10:48,282 	Text Reference  :	dabei das wetter aber nicht unfreundlich höchstens mal im  osten und auch             im  süden  ein     paar schauer
+2024-02-23 05:10:48,282 	Text Hypothesis :	***** *** ****** **** ***** ************ ********* *** und nun   die wettervorhersage für morgen samstag den  alpen  
+2024-02-23 05:10:48,282 	Text Alignment  :	D     D   D      D    D     D            D         D   S   S     S   S                S   S      S       S    S      
+2024-02-23 05:10:48,282 ========================================================================================================================
+2024-02-23 05:10:48,282 Logging Sequence: 01July_2011_Friday_tagesschau-2765
+2024-02-23 05:10:48,283 	Gloss Reference :	HEUTE NACHT DREIZEHN NORD VIER BERG
+2024-02-23 05:10:48,283 	Gloss Hypothesis:	***** ***** ******** **** **** ****
+2024-02-23 05:10:48,283 	Gloss Alignment :	D     D     D        D    D    D   
+2024-02-23 05:10:48,283 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:10:48,284 	Text Reference  :	heute nacht dreizehn grad an  den küsten           vier grad   an      den alpen
+2024-02-23 05:10:48,285 	Text Hypothesis :	***** ***** ******** und  nun die wettervorhersage für  morgen samstag den alpen
+2024-02-23 05:10:48,285 	Text Alignment  :	D     D     D        S    S   S   S                S    S      S                
+2024-02-23 05:10:48,285 ========================================================================================================================
+2024-02-23 05:10:48,285 Logging Sequence: 19March_2011_Saturday_tagesschau-4690
+2024-02-23 05:10:48,285 	Gloss Reference :	MORGEN FRUEH VERSCHWINDEN LANGSAM SCHNELL NORDOST BISSCHEN WOLKE BLEIBEN TROCKEN
+2024-02-23 05:10:48,285 	Gloss Hypothesis:	****** ***** ************ ******* ******* ******* ******** ***** ******* *******
+2024-02-23 05:10:48,285 	Gloss Alignment :	D      D     D            D       D       D       D        D     D       D      
+2024-02-23 05:10:48,285 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:10:48,288 	Text Reference  :	der löst sich morgen mehr oder weniger rasch auf vor allem in der nordosthälfte gibt es  auch noch einige           wolken aber   es      bleibt trocken
+2024-02-23 05:10:48,288 	Text Hypothesis :	*** **** **** ****** **** **** ******* ***** *** *** ***** ** *** ************* **** und nun  die  wettervorhersage für    morgen samstag den    alpen  
+2024-02-23 05:10:48,288 	Text Alignment  :	D   D    D    D      D    D    D       D     D   D   D     D  D   D             D    S   S    S    S                S      S      S       S      S      
+2024-02-23 05:10:48,288 ========================================================================================================================
+2024-02-23 05:14:25,706 [Epoch: 001 Step: 00000200] Batch Recognition Loss:   5.743726 => Gls Tokens per Sec:      114 || Batch Translation Loss:  37.934441 => Txt Tokens per Sec:      220 || Lr: 0.001000
+2024-02-23 05:17:14,373 Validation result at epoch   1, step      200: duration: 168.6648s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 94.69369	Translation Loss: 27681.02930	PPL: 43.45697
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.52	(BLEU-1: 7.99,	BLEU-2: 3.40,	BLEU-3: 1.05,	BLEU-4: 0.52)
+	CHRF 15.05	ROUGE 9.69
+2024-02-23 05:17:14,376 Logging Recognition and Translation Outputs
+2024-02-23 05:17:14,376 ========================================================================================================================
+2024-02-23 05:17:14,376 Logging Sequence: 24November_2011_Thursday_heute-222
+2024-02-23 05:17:14,376 	Gloss Reference :	NORD NUR WOLKE FROST SUED
+2024-02-23 05:17:14,376 	Gloss Hypothesis:	**** *** ***** ***** ****
+2024-02-23 05:17:14,376 	Gloss Alignment :	D    D   D     D     D   
+2024-02-23 05:17:14,377 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:17:14,378 	Text Reference  :	in norddeutschland dagegen nur wolken und der frost ja den haben wir wieder in        der      südhälfte
+2024-02-23 05:17:14,378 	Text Hypothesis :	** *************** ******* *** ****** *** *** ***** am tag ist   es  im     nordosten einzelne schauer  
+2024-02-23 05:17:14,378 	Text Alignment  :	D  D               D       D   D      D   D   D     S  S   S     S   S      S         S        S        
+2024-02-23 05:17:14,378 ========================================================================================================================
+2024-02-23 05:17:14,378 Logging Sequence: 14October_2009_Wednesday_tagesschau-529
+2024-02-23 05:17:14,378 	Gloss Reference :	BESONDERS NORDWEST WIND STARK
+2024-02-23 05:17:14,378 	Gloss Hypothesis:	********* ******** **** *****
+2024-02-23 05:17:14,378 	Gloss Alignment :	D         D        D    D    
+2024-02-23 05:17:14,378 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:17:14,379 	Text Reference  :	vor allem im nordwesten ist es ** ********* sehr     windig 
+2024-02-23 05:17:14,379 	Text Hypothesis :	*** ***** am tag        ist es im nordosten einzelne schauer
+2024-02-23 05:17:14,379 	Text Alignment  :	D   D     S  S                 I  I         S        S      
+2024-02-23 05:17:14,379 ========================================================================================================================
+2024-02-23 05:17:14,379 Logging Sequence: 17October_2009_Saturday_tagesschau-2139
+2024-02-23 05:17:14,379 	Gloss Reference :	NEBEL KUEHL
+2024-02-23 05:17:14,379 	Gloss Hypothesis:	***** *****
+2024-02-23 05:17:14,379 	Gloss Alignment :	D     D    
+2024-02-23 05:17:14,379 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:17:14,380 	Text Reference  :	wo sich nebel hält ist es ** ********* ******** kälter 
+2024-02-23 05:17:14,380 	Text Hypothesis :	** **** am    tag  ist es im nordosten einzelne schauer
+2024-02-23 05:17:14,380 	Text Alignment  :	D  D    S     S           I  I         I        S      
+2024-02-23 05:17:14,380 ========================================================================================================================
+2024-02-23 05:17:14,380 Logging Sequence: 10August_2011_Wednesday_tagesschau-6303
+2024-02-23 05:17:14,380 	Gloss Reference :	IM-VERLAUF TEMPERATUR REGION
+2024-02-23 05:17:14,380 	Gloss Hypothesis:	********** ********** ******
+2024-02-23 05:17:14,380 	Gloss Alignment :	D          D          D     
+2024-02-23 05:17:14,380 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:17:14,381 	Text Reference  :	in den nächsten tagen steigen die temperaturen auch im ********* übrigen  land   
+2024-02-23 05:17:14,404 	Text Hypothesis :	** *** ******** ***** am      tag ist          es   im nordosten einzelne schauer
+2024-02-23 05:17:14,404 	Text Alignment  :	D  D   D        D     S       S   S            S       I         S        S      
+2024-02-23 05:17:14,404 ========================================================================================================================
+2024-02-23 05:17:14,404 Logging Sequence: 09April_2010_Friday_tagesschau-7623
+2024-02-23 05:17:14,405 	Gloss Reference :	JETZT WETTER MORGEN SAMSTAG ZEHNTE APRIL WIE-AUSSEHEN ZEIGEN-BILDSCHIRM
+2024-02-23 05:17:14,405 	Gloss Hypothesis:	***** ****** ****** ******* ****** ***** ************ *****************
+2024-02-23 05:17:14,405 	Gloss Alignment :	D     D      D      D       D      D     D            D                
+2024-02-23 05:17:14,405 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:17:14,406 	Text Reference  :	und nun die wettervorhersage für morgen samstag den       zehnten  april  
+2024-02-23 05:17:14,406 	Text Hypothesis :	*** *** am  tag              ist es     im      nordosten einzelne schauer
+2024-02-23 05:17:14,406 	Text Alignment  :	D   D   S   S                S   S      S       S         S        S      
+2024-02-23 05:17:14,406 ========================================================================================================================
+2024-02-23 05:18:08,240 Epoch   1: Total Training Recognition Loss 1418.27  Total Training Translation Loss 16041.50 
+2024-02-23 05:18:08,243 EPOCH 2
+2024-02-23 05:20:51,961 [Epoch: 002 Step: 00000300] Batch Recognition Loss:   5.459067 => Gls Tokens per Sec:      120 || Batch Translation Loss:  42.311695 => Txt Tokens per Sec:      232 || Lr: 0.001000
+2024-02-23 05:23:26,830 Validation result at epoch   2, step      300: duration: 154.8666s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 94.96786	Translation Loss: 25999.45312	PPL: 34.55811
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.56	(BLEU-1: 12.64,	BLEU-2: 4.09,	BLEU-3: 1.34,	BLEU-4: 0.56)
+	CHRF 19.91	ROUGE 12.22
+2024-02-23 05:23:26,832 Logging Recognition and Translation Outputs
+2024-02-23 05:23:26,832 ========================================================================================================================
+2024-02-23 05:23:26,833 Logging Sequence: 15December_2010_Wednesday_tagesschau-40
+2024-02-23 05:23:26,833 	Gloss Reference :	DANN STARK SCHNEE SCHNEIEN KOMMEN
+2024-02-23 05:23:26,833 	Gloss Hypothesis:	**** ***** ****** ******** ******
+2024-02-23 05:23:26,833 	Gloss Alignment :	D    D     D      D        D     
+2024-02-23 05:23:26,833 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:23:26,837 	Text Reference  :	am tag ****** ** ** ****** *** ******** breiten sich die    teilweise kräftigen schneefälle weiter aus  
+2024-02-23 05:23:26,838 	Text Hypothesis :	am tag regnet es im westen und südosten auch    im   westen und       südosten  auch        mal    sonne
+2024-02-23 05:23:26,839 	Text Alignment  :	       I      I  I  I      I   I        S       S    S      S         S         S           S      S    
+2024-02-23 05:23:26,839 ========================================================================================================================
+2024-02-23 05:23:26,839 Logging Sequence: 20February_2011_Sunday_tagesschau-3166
+2024-02-23 05:23:26,840 	Gloss Reference :	AM-TAG REGION SCHNEE FLUSS REGEN
+2024-02-23 05:23:26,840 	Gloss Hypothesis:	****** ****** ****** ***** *****
+2024-02-23 05:23:26,840 	Gloss Alignment :	D      D      D      D     D    
+2024-02-23 05:23:26,840 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:23:26,848 	Text Reference  :	auch am tag ****** ** im ****** *** ******** süden noch schnee am  rhein    auch *** schneeregen
+2024-02-23 05:23:26,848 	Text Hypothesis :	**** am tag regnet es im westen und südosten auch  im   westen und südosten auch mal sonne      
+2024-02-23 05:23:26,849 	Text Alignment  :	D           I      I     I      I   I        S     S    S      S   S             I   S          
+2024-02-23 05:23:26,849 ========================================================================================================================
+2024-02-23 05:23:26,849 Logging Sequence: 20June_2011_Monday_heute-6514
+2024-02-23 05:23:26,849 	Gloss Reference :	DANN WETTER WECHSELHAFT
+2024-02-23 05:23:26,850 	Gloss Hypothesis:	**** ****** ***********
+2024-02-23 05:23:26,850 	Gloss Alignment :	D    D      D          
+2024-02-23 05:23:26,850 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:23:26,854 	Text Reference  :	** *** ****** ** ** ****** und eher wechselhaft geht es mit    unserem wetter   auch *** weiter
+2024-02-23 05:23:26,854 	Text Hypothesis :	am tag regnet es im westen und **** südosten    auch im westen und     südosten auch mal sonne 
+2024-02-23 05:23:26,855 	Text Alignment  :	I  I   I      I  I  I          D    S           S    S  S      S       S             I   S     
+2024-02-23 05:23:26,855 ========================================================================================================================
+2024-02-23 05:23:26,855 Logging Sequence: 10November_2009_Tuesday_tagesschau-7250
+2024-02-23 05:23:26,855 	Gloss Reference :	DONNERSTAG NEBEL AUFLOESEN WOLKE BEWOELKT HABEN2
+2024-02-23 05:23:26,856 	Gloss Hypothesis:	********** ***** ********* ***** ******** ******
+2024-02-23 05:23:26,856 	Gloss Alignment :	D          D     D         D     D        D     
+2024-02-23 05:23:26,856 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:23:26,862 	Text Reference  :	** *** sobald sich am donnerstag der nebel    verzogen hat liegen die wolken   unterschiedlich dicht beieinander
+2024-02-23 05:23:26,863 	Text Hypothesis :	am tag regnet es   im westen     und südosten auch     im  westen und südosten auch            mal   sonne      
+2024-02-23 05:23:26,863 	Text Alignment  :	I  I   S      S    S  S          S   S        S        S   S      S   S        S               S     S          
+2024-02-23 05:23:26,863 ========================================================================================================================
+2024-02-23 05:23:26,863 Logging Sequence: 24January_2013_Thursday_heute-7254
+2024-02-23 05:23:26,863 	Gloss Reference :	ENDLICH SONNE ABER DEUTSCH KAUM
+2024-02-23 05:23:26,863 	Gloss Hypothesis:	******* ***** **** ******* ****
+2024-02-23 05:23:26,863 	Gloss Alignment :	D       D     D    D       D   
+2024-02-23 05:23:26,864 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:23:26,867 	Text Reference  :	endlich mal sonnenschein aber   es ** ****** *** ******** **** ** blieb  leider die      ausnahme in  deutschland
+2024-02-23 05:23:26,868 	Text Hypothesis :	******* am  tag          regnet es im westen und südosten auch im westen und    südosten auch     mal sonne      
+2024-02-23 05:23:26,868 	Text Alignment  :	D       S   S            S         I  I      I   I        I    I  S      S      S        S        S   S          
+2024-02-23 05:23:26,868 ========================================================================================================================
+2024-02-23 05:26:23,822 [Epoch: 002 Step: 00000400] Batch Recognition Loss:   5.435848 => Gls Tokens per Sec:      140 || Batch Translation Loss: 119.006401 => Txt Tokens per Sec:      269 || Lr: 0.001000
+2024-02-23 05:28:49,685 Hooray! New best validation result [eval_metric]!
+2024-02-23 05:28:49,688 Saving new checkpoint.
+2024-02-23 05:28:52,965 Validation result at epoch   2, step      400: duration: 149.1416s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 97.83202	Translation Loss: 25351.70117	PPL: 31.63869
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 3.61	(BLEU-1: 10.22,	BLEU-2: 5.44,	BLEU-3: 4.24,	BLEU-4: 3.61)
+	CHRF 22.91	ROUGE 11.30
+2024-02-23 05:28:52,967 Logging Recognition and Translation Outputs
+2024-02-23 05:28:52,968 ========================================================================================================================
+2024-02-23 05:28:52,968 Logging Sequence: 07October_2012_Sunday_tagesschau-3026
+2024-02-23 05:28:52,968 	Gloss Reference :	TAG KLAR STERN SEHEN KOENNEN FROST
+2024-02-23 05:28:52,968 	Gloss Hypothesis:	*** **** ***** ***** ******* *****
+2024-02-23 05:28:52,968 	Gloss Alignment :	D   D    D     D     D       D    
+2024-02-23 05:28:52,968 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:28:52,969 	Text Reference  :	in  der teilweise klaren           nacht gibt   es      örtlich leichten            frost  
+2024-02-23 05:28:52,969 	Text Hypothesis :	und nun die       wettervorhersage für   morgen samstag den     sechsundzwanzigsten februar
+2024-02-23 05:28:52,969 	Text Alignment  :	S   S   S         S                S     S      S       S       S                   S      
+2024-02-23 05:28:52,969 ========================================================================================================================
+2024-02-23 05:28:52,970 Logging Sequence: 30September_2012_Sunday_tagesschau-4038
+2024-02-23 05:28:52,970 	Gloss Reference :	DONNERSTAG DEUTSCH LAND WECHSELHAFT UEBERWIEGEND REGEN MOEGLICH STARK WIND
+2024-02-23 05:28:52,970 	Gloss Hypothesis:	********** ******* **** *********** ************ ***** ******** ***** ****
+2024-02-23 05:28:52,970 	Gloss Alignment :	D          D       D    D           D            D     D        D     D   
+2024-02-23 05:28:52,970 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:28:52,971 	Text Reference  :	am donnerstag im ganzen land unbeständiges wetter verbreitet regnet es               und es     kann    sehr windig              werden 
+2024-02-23 05:28:52,971 	Text Hypothesis :	** ********** ** ****** **** ************* und    nun        die    wettervorhersage für morgen samstag den  sechsundzwanzigsten februar
+2024-02-23 05:28:52,971 	Text Alignment  :	D  D          D  D      D    D             S      S          S      S                S   S      S       S    S                   S      
+2024-02-23 05:28:52,971 ========================================================================================================================
+2024-02-23 05:28:52,971 Logging Sequence: 10December_2011_Saturday_tagesschau-5420
+2024-02-23 05:28:52,971 	Gloss Reference :	AB MONTAG IN-KOMMEND WETTER WECHSELHAFT WIND
+2024-02-23 05:28:52,971 	Gloss Hypothesis:	** ****** ********** ****** *********** ****
+2024-02-23 05:28:52,972 	Gloss Alignment :	D  D      D          D      D           D   
+2024-02-23 05:28:52,972 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:28:52,972 	Text Reference  :	*** *** in  der              neuen woche  wieder  unbeständig und                 windig 
+2024-02-23 05:28:52,972 	Text Hypothesis :	und nun die wettervorhersage für   morgen samstag den         sechsundzwanzigsten februar
+2024-02-23 05:28:52,972 	Text Alignment  :	I   I   S   S                S     S      S       S           S                   S      
+2024-02-23 05:28:52,972 ========================================================================================================================
+2024-02-23 05:28:52,972 Logging Sequence: 28May_2010_Friday_tagesschau-7496
+2024-02-23 05:28:52,973 	Gloss Reference :	HOCH KOMMEN OST KOMMEN ES-BEDEUTET MORGEN FREUNDLICH WETTER
+2024-02-23 05:28:52,973 	Gloss Hypothesis:	**** ****** *** ****** *********** ****** ********** ******
+2024-02-23 05:28:52,973 	Gloss Alignment :	D    D      D   D      D           D      D          D     
+2024-02-23 05:28:52,973 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:28:52,974 	Text Reference  :	das hoch über den azoren dehnt sich über mitteleuropa nach osten aus und              sorgt morgen kurzzeitig für     meist freundliches        wetter 
+2024-02-23 05:28:52,974 	Text Hypothesis :	*** **** **** *** ****** ***** **** **** ************ und  nun   die wettervorhersage für   morgen ********** sonntag den   sechsundzwanzigsten februar
+2024-02-23 05:28:52,975 	Text Alignment  :	D   D    D    D   D      D     D    D    D            S    S     S   S                S            D          S       S     S                   S      
+2024-02-23 05:28:52,975 ========================================================================================================================
+2024-02-23 05:28:52,975 Logging Sequence: 29June_2010_Tuesday_tagesschau-7705
+2024-02-23 05:28:52,975 	Gloss Reference :	HEUTE NACHT TEMPERATUR ELF BIS ACHTZEHN GRAD
+2024-02-23 05:28:52,975 	Gloss Hypothesis:	***** ***** ********** *** *** ******** ****
+2024-02-23 05:28:52,975 	Gloss Alignment :	D     D     D          D   D   D        D   
+2024-02-23 05:28:52,975 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:28:52,976 	Text Reference  :	*** *** heute nacht            temperaturen zwischen elf     und achtzehn            grad   
+2024-02-23 05:28:52,976 	Text Hypothesis :	und nun die   wettervorhersage für          morgen   samstag den sechsundzwanzigsten februar
+2024-02-23 05:28:52,976 	Text Alignment  :	I   I   S     S                S            S        S       S   S                   S      
+2024-02-23 05:28:52,976 ========================================================================================================================
+2024-02-23 05:30:18,092 Epoch   2: Total Training Recognition Loss 1202.07  Total Training Translation Loss 11916.34 
+2024-02-23 05:30:18,094 EPOCH 3
+2024-02-23 05:32:01,001 [Epoch: 003 Step: 00000500] Batch Recognition Loss:   5.473966 => Gls Tokens per Sec:      137 || Batch Translation Loss:  40.038265 => Txt Tokens per Sec:      264 || Lr: 0.001000
+2024-02-23 05:34:12,546 Validation result at epoch   3, step      500: duration: 131.5426s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 94.58634	Translation Loss: 24689.56641	PPL: 28.90919
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 3.29	(BLEU-1: 13.17,	BLEU-2: 6.27,	BLEU-3: 4.28,	BLEU-4: 3.29)
+	CHRF 19.22	ROUGE 12.84
+2024-02-23 05:34:12,547 Logging Recognition and Translation Outputs
+2024-02-23 05:34:12,548 ========================================================================================================================
+2024-02-23 05:34:12,591 Logging Sequence: 22November_2010_Monday_heute-279
+2024-02-23 05:34:12,592 	Gloss Reference :	IX KOENNEN GEFAHR GLATT BESONDERS MITTE REGION SUED DANN KALT
+2024-02-23 05:34:12,592 	Gloss Hypothesis:	** ******* ****** ***** ********* ***** ****** **** **** ****
+2024-02-23 05:34:12,592 	Gloss Alignment :	D  D       D      D     D         D     D      D    D    D   
+2024-02-23 05:34:12,593 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:34:12,597 	Text Reference  :	und es kann auch örtlich zum teil auch gefährlich glatt werden denn         vor allen dingen in   der mitte  und auch im süden wird es   frostig
+2024-02-23 05:34:12,597 	Text Hypothesis :	*** ** **** **** ******* *** **** **** ********** ***** die    temperaturen von minus drei   grad im  westen und **** ** ***** plus drei grad   
+2024-02-23 05:34:12,597 	Text Alignment  :	D   D  D    D    D       D   D    D    D          D     S      S            S   S     S      S    S   S          D    D  D     S    S    S      
+2024-02-23 05:34:12,597 ========================================================================================================================
+2024-02-23 05:34:12,597 Logging Sequence: 22January_2010_Friday_tagesschau-907
+2024-02-23 05:34:12,598 	Gloss Reference :	TAG VIEL WOLKE NEBEL BLEIBEN TROCKEN IX SONNE MOEGLICH
+2024-02-23 05:34:12,598 	Gloss Hypothesis:	*** **** ***** ***** ******* ******* ** ***** ********
+2024-02-23 05:34:12,598 	Gloss Alignment :	D   D    D     D     D       D       D  D     D       
+2024-02-23 05:34:12,598 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:34:12,601 	Text Reference  :	*** am           tag bleibt es   bei  vielen wolken und nebel weitgehend trocken mancherorts zeigt sich auch die  sonne
+2024-02-23 05:34:12,602 	Text Hypothesis :	die temperaturen von minus  drei grad im     westen und ***** ********** ******* *********** ***** **** plus drei grad 
+2024-02-23 05:34:12,602 	Text Alignment  :	I   S            S   S      S    S    S      S          D     D          D       D           D     D    S    S    S    
+2024-02-23 05:34:12,602 ========================================================================================================================
+2024-02-23 05:34:12,602 Logging Sequence: 20October_2009_Tuesday_tagesschau-3595
+2024-02-23 05:34:12,602 	Gloss Reference :	WIND WEHEN MAESSIG WEHEN
+2024-02-23 05:34:12,603 	Gloss Hypothesis:	**** ***** ******* *****
+2024-02-23 05:34:12,603 	Gloss Alignment :	D    D     D       D    
+2024-02-23 05:34:12,603 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:34:12,630 	Text Reference  :	der wind aus ost weht             mäßig im     nordosten zum teil        frisch 
+2024-02-23 05:34:12,631 	Text Hypothesis :	*** und  nun die wettervorhersage für   morgen freitag   den achtzehnten oktober
+2024-02-23 05:34:12,632 	Text Alignment  :	D   S    S   S   S                S     S      S         S   S           S      
+2024-02-23 05:34:12,632 ========================================================================================================================
+2024-02-23 05:34:12,632 Logging Sequence: 10August_2011_Wednesday_tagesschau-6303
+2024-02-23 05:34:12,634 	Gloss Reference :	IM-VERLAUF TEMPERATUR REGION
+2024-02-23 05:34:12,634 	Gloss Hypothesis:	********** ********** ******
+2024-02-23 05:34:12,634 	Gloss Alignment :	D          D          D     
+2024-02-23 05:34:12,634 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:34:12,641 	Text Reference  :	in den nächsten tagen steigen die temperaturen *** ***** **** auch im ***** *** **** übrigen land
+2024-02-23 05:34:12,648 	Text Hypothesis :	** *** ******** ***** ******* die temperaturen von minus drei grad im süden und plus drei    grad
+2024-02-23 05:34:12,648 	Text Alignment  :	D  D   D        D     D                        I   I     I    S       I     I   I    S       S   
+2024-02-23 05:34:12,648 ========================================================================================================================
+2024-02-23 05:34:12,648 Logging Sequence: 12November_2009_Thursday_tagesschau-6770
+2024-02-23 05:34:12,684 	Gloss Reference :	NORD MORGEN BEWOELKT REGION REGEN
+2024-02-23 05:34:12,686 	Gloss Hypothesis:	**** ****** ******** ****** *****
+2024-02-23 05:34:12,686 	Gloss Alignment :	D    D      D        D      D    
+2024-02-23 05:34:12,686 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:34:12,717 	Text Reference  :	am tag liegen       über der   nordhälfte dichte wolken verbreitet fällt regen oder sprühregen
+2024-02-23 05:34:12,719 	Text Hypothesis :	** die temperaturen von  minus drei       grad   im     süden      und   plus  drei grad      
+2024-02-23 05:34:12,720 	Text Alignment  :	D  S   S            S    S     S          S      S      S          S     S     S    S         
+2024-02-23 05:34:12,720 ========================================================================================================================
+2024-02-23 05:37:17,843 [Epoch: 003 Step: 00000600] Batch Recognition Loss:   4.992035 => Gls Tokens per Sec:      134 || Batch Translation Loss:  47.687458 => Txt Tokens per Sec:      256 || Lr: 0.001000
+2024-02-23 05:39:31,251 Hooray! New best validation result [eval_metric]!
+2024-02-23 05:39:31,255 Saving new checkpoint.
+2024-02-23 05:39:35,015 Validation result at epoch   3, step      600: duration: 137.1699s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 95.85264	Translation Loss: 24119.11523	PPL: 26.74722
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 3.77	(BLEU-1: 10.37,	BLEU-2: 5.57,	BLEU-3: 4.39,	BLEU-4: 3.77)
+	CHRF 23.50	ROUGE 11.41
+2024-02-23 05:39:35,039 Logging Recognition and Translation Outputs
+2024-02-23 05:39:35,040 ========================================================================================================================
+2024-02-23 05:39:35,040 Logging Sequence: 27August_2009_Thursday_tagesschau-3285
+2024-02-23 05:39:35,041 	Gloss Reference :	NORD SCHAUER
+2024-02-23 05:39:35,041 	Gloss Hypothesis:	**** *******
+2024-02-23 05:39:35,041 	Gloss Alignment :	D    D      
+2024-02-23 05:39:35,041 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:39:35,042 	Text Reference  :	*** *** *** **************** *** ****** im      norden noch               schauer
+2024-02-23 05:39:35,042 	Text Hypothesis :	und nun die wettervorhersage für morgen sonntag den    achtundzwanzigsten juli   
+2024-02-23 05:39:35,042 	Text Alignment  :	I   I   I   I                I   I      S       S      S                  S      
+2024-02-23 05:39:35,042 ========================================================================================================================
+2024-02-23 05:39:35,042 Logging Sequence: 24January_2011_Monday_tagesschau-3720
+2024-02-23 05:39:35,042 	Gloss Reference :	WIND WEHEN FRISCH KOMMEN HOCH STURM
+2024-02-23 05:39:35,042 	Gloss Hypothesis:	**** ***** ****** ****** **** *****
+2024-02-23 05:39:35,042 	Gloss Alignment :	D    D     D      D      D    D    
+2024-02-23 05:39:35,042 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:39:35,043 	Text Reference  :	der wind weht mäßig            bis frisch in      den hochlagen muss mit sturmböen gerechnet          werden
+2024-02-23 05:39:35,043 	Text Hypothesis :	und nun  die  wettervorhersage für morgen sonntag den ********* **** *** ********* achtundzwanzigsten juli  
+2024-02-23 05:39:35,044 	Text Alignment  :	S   S    S    S                S   S      S           D         D    D   D         S                  S     
+2024-02-23 05:39:35,044 ========================================================================================================================
+2024-02-23 05:39:35,044 Logging Sequence: 29September_2011_Thursday_heute-4235
+2024-02-23 05:39:35,044 	Gloss Reference :	SCHOEN ABEND poss-EUCH MACHEN GUT poss-EUCH
+2024-02-23 05:39:35,044 	Gloss Hypothesis:	****** ***** ********* ****** *** *********
+2024-02-23 05:39:35,044 	Gloss Alignment :	D      D     D         D      D   D        
+2024-02-23 05:39:35,044 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:39:35,045 	Text Reference  :	*** ihnen einen schönen          abend und    machen  sie es                 gut      
+2024-02-23 05:39:35,045 	Text Hypothesis :	und nun   die   wettervorhersage für   morgen sonntag den achtundzwanzigsten september
+2024-02-23 05:39:35,045 	Text Alignment  :	I   S     S     S                S     S      S       S   S                  S        
+2024-02-23 05:39:35,045 ========================================================================================================================
+2024-02-23 05:39:35,045 Logging Sequence: 24October_2009_Saturday_tagesschau-4285
+2024-02-23 05:39:35,045 	Gloss Reference :	TAG DANN WEST FREUNDLICH SONNE DABEI
+2024-02-23 05:39:35,045 	Gloss Hypothesis:	*** **** **** ********** ***** *****
+2024-02-23 05:39:35,045 	Gloss Alignment :	D   D    D    D          D     D    
+2024-02-23 05:39:35,045 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:39:35,046 	Text Reference  :	im laufe des tages wird es  in               der westhälfte freundlicher mit sonnigen           abschnitten
+2024-02-23 05:39:35,046 	Text Hypothesis :	** ***** *** und   nun  die wettervorhersage für morgen     sonntag      den achtundzwanzigsten juli       
+2024-02-23 05:39:35,046 	Text Alignment  :	D  D     D   S     S    S   S                S   S          S            S   S                  S          
+2024-02-23 05:39:35,046 ========================================================================================================================
+2024-02-23 05:39:35,046 Logging Sequence: 24July_2011_Sunday_tagesschau-6621
+2024-02-23 05:39:35,047 	Gloss Reference :	DARUNTER TAG IM-VERLAUF MEHR WARM
+2024-02-23 05:39:35,047 	Gloss Hypothesis:	******** *** ********** **** ****
+2024-02-23 05:39:35,047 	Gloss Alignment :	D        D   D          D    D   
+2024-02-23 05:39:35,047 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:39:35,047 	Text Reference  :	*** dadurch wird es               von tag    zu      tag etwas              wärmer
+2024-02-23 05:39:35,048 	Text Hypothesis :	und nun     die  wettervorhersage für morgen sonntag den achtundzwanzigsten juli  
+2024-02-23 05:39:35,048 	Text Alignment  :	I   S       S    S                S   S      S       S   S                  S     
+2024-02-23 05:39:35,048 ========================================================================================================================
+2024-02-23 05:41:41,140 Epoch   3: Total Training Recognition Loss 1156.47  Total Training Translation Loss 10578.27 
+2024-02-23 05:41:41,142 EPOCH 4
+2024-02-23 05:42:52,368 [Epoch: 004 Step: 00000700] Batch Recognition Loss:   4.842654 => Gls Tokens per Sec:      122 || Batch Translation Loss:  35.966232 => Txt Tokens per Sec:      232 || Lr: 0.001000
+2024-02-23 05:45:21,190 Hooray! New best validation result [eval_metric]!
+2024-02-23 05:45:21,194 Saving new checkpoint.
+2024-02-23 05:45:25,816 Validation result at epoch   4, step      700: duration: 153.4438s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 96.00464	Translation Loss: 24466.79883	PPL: 28.04487
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 3.88	(BLEU-1: 10.51,	BLEU-2: 5.73,	BLEU-3: 4.51,	BLEU-4: 3.88)
+	CHRF 19.89	ROUGE 11.61
+2024-02-23 05:45:25,843 Logging Recognition and Translation Outputs
+2024-02-23 05:45:25,844 ========================================================================================================================
+2024-02-23 05:45:25,844 Logging Sequence: 29October_2009_Thursday_tagesschau-1011
+2024-02-23 05:45:25,845 	Gloss Reference :	JETZT WETTER WIE-AUSSEHEN MORGEN DREISSIG OKTOBER
+2024-02-23 05:45:25,845 	Gloss Hypothesis:	***** ****** ************ ****** ******** *******
+2024-02-23 05:45:25,845 	Gloss Alignment :	D     D      D            D      D        D      
+2024-02-23 05:45:25,845 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:45:25,846 	Text Reference  :	und nun die wettervorhersage für morgen freitag den dreißigsten oktober
+2024-02-23 05:45:25,846 	Text Hypothesis :	und nun die wettervorhersage für morgen freitag den fünften     januar 
+2024-02-23 05:45:25,846 	Text Alignment  :	                                                    S           S      
+2024-02-23 05:45:25,846 ========================================================================================================================
+2024-02-23 05:45:25,846 Logging Sequence: 23July_2011_Saturday_tagesschau-5498
+2024-02-23 05:45:25,846 	Gloss Reference :	SPAETER REGEN UEBERALL REGION
+2024-02-23 05:45:25,846 	Gloss Hypothesis:	******* ***** ******** ******
+2024-02-23 05:45:25,846 	Gloss Alignment :	D       D     D        D     
+2024-02-23 05:45:25,846 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:45:25,847 	Text Reference  :	*** *** später greift           der regen  auf     den westen  über  
+2024-02-23 05:45:25,847 	Text Hypothesis :	und nun die    wettervorhersage für morgen freitag den fünften januar
+2024-02-23 05:45:25,847 	Text Alignment  :	I   I   S      S                S   S      S           S       S     
+2024-02-23 05:45:25,847 ========================================================================================================================
+2024-02-23 05:45:25,847 Logging Sequence: 18November_2009_Wednesday_tagesschau-5586
+2024-02-23 05:45:25,847 	Gloss Reference :	WENN NEBEL neg-HABEN FREUNDLICH
+2024-02-23 05:45:25,847 	Gloss Hypothesis:	**** ***** ********* **********
+2024-02-23 05:45:25,847 	Gloss Alignment :	D    D     D         D         
+2024-02-23 05:45:25,847 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:45:25,848 	Text Reference  :	*** *** ansonsten wird             es  abseits zäher   nebelfelder recht   freundlich
+2024-02-23 05:45:25,848 	Text Hypothesis :	und nun die       wettervorhersage für morgen  freitag den         fünften januar    
+2024-02-23 05:45:25,848 	Text Alignment  :	I   I   S         S                S   S       S       S           S       S         
+2024-02-23 05:45:25,848 ========================================================================================================================
+2024-02-23 05:45:25,848 Logging Sequence: 24January_2011_Monday_heute-6980
+2024-02-23 05:45:25,848 	Gloss Reference :	MORGEN MEISTENS ZWEI BIS SECHS GRAD ABER BAYERN REGION BISSCHEN KALT MITTE REGION AUCH
+2024-02-23 05:45:25,848 	Gloss Hypothesis:	****** ******** **** *** ***** **** **** ****** ****** ******** **** ***** ****** ****
+2024-02-23 05:45:25,848 	Gloss Alignment :	D      D        D    D   D     D    D    D      D      D        D    D     D      D   
+2024-02-23 05:45:25,848 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:45:25,850 	Text Reference  :	und morgen haben wir meist zwischen zwei und sechs grad zu erwarten aber in bayern bleibt es eben ein bisschen         kälter und    in      den ******* mittelgebirgen
+2024-02-23 05:45:25,850 	Text Hypothesis :	*** ****** ***** *** ***** ******** **** und ***** **** ** ******** **** ** ****** ****** ** nun  die wettervorhersage für    morgen freitag den fünften januar        
+2024-02-23 05:45:25,850 	Text Alignment  :	D   D      D     D   D     D        D        D     D    D  D        D    D  D      D      D  S    S   S                S      S      S           I       S             
+2024-02-23 05:45:25,850 ========================================================================================================================
+2024-02-23 05:45:25,850 Logging Sequence: 16July_2011_Saturday_tagesschau-7524
+2024-02-23 05:45:25,850 	Gloss Reference :	NACHT KOMMEN REGEN STARK OST SUEDOST KLAR SEHEN STERN KOENNEN
+2024-02-23 05:45:25,850 	Gloss Hypothesis:	***** ****** ***** ***** *** ******* **** ***** ***** *******
+2024-02-23 05:45:25,850 	Gloss Alignment :	D     D      D     D     D   D       D    D     D     D      
+2024-02-23 05:45:25,850 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:45:25,852 	Text Reference  :	in der nacht breitet sich von westen regen aus der teilweise kräftig sein kann während sich im  osten            und südosten noch    die sterne  zeigen
+2024-02-23 05:45:25,852 	Text Hypothesis :	** *** ***** ******* **** *** ****** ***** *** *** ********* ******* **** **** und     nun  die wettervorhersage für morgen   freitag den fünften januar
+2024-02-23 05:45:25,852 	Text Alignment  :	D  D   D     D       D    D   D      D     D   D   D         D       D    D    S       S    S   S                S   S        S       S   S       S     
+2024-02-23 05:45:25,852 ========================================================================================================================
+2024-02-23 05:48:41,959 [Epoch: 004 Step: 00000800] Batch Recognition Loss:   4.820560 => Gls Tokens per Sec:      124 || Batch Translation Loss:  36.666801 => Txt Tokens per Sec:      240 || Lr: 0.001000
+2024-02-23 05:50:51,387 Validation result at epoch   4, step      800: duration: 129.4225s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 96.89051	Translation Loss: 23966.64062	PPL: 26.19726
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 2.46	(BLEU-1: 15.38,	BLEU-2: 7.24,	BLEU-3: 3.79,	BLEU-4: 2.46)
+	CHRF 16.53	ROUGE 13.80
+2024-02-23 05:50:51,390 Logging Recognition and Translation Outputs
+2024-02-23 05:50:51,391 ========================================================================================================================
+2024-02-23 05:50:51,391 Logging Sequence: 09August_2009_Sunday_tagesschau-1179
+2024-02-23 05:50:51,391 	Gloss Reference :	MORGEN WEST TIEF KOMMEN RICHTUNG OST AUFZIEHEN
+2024-02-23 05:50:51,392 	Gloss Hypothesis:	****** **** **** ****** ******** *** *********
+2024-02-23 05:50:51,392 	Gloss Alignment :	D      D    D    D      D        D   D        
+2024-02-23 05:50:51,392 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:50:51,395 	Text Reference  :	der ausläufer eines  tiefs verlagert sich morgen vom westen deutschlands weiter nach osten 
+2024-02-23 05:50:51,395 	Text Hypothesis :	am  tag       regnet es    in        der  mitte  und im     süden        ist    es   windig
+2024-02-23 05:50:51,395 	Text Alignment  :	S   S         S      S     S         S    S      S   S      S            S      S    S     
+2024-02-23 05:50:51,395 ========================================================================================================================
+2024-02-23 05:50:51,396 Logging Sequence: 10August_2010_Tuesday_heute-1455
+2024-02-23 05:50:51,396 	Gloss Reference :	OST REGION SONNE MEHR WARM MAXIMAL SECHS ZWANZIG SUED MAXIMAL SIEBEN ZWANZIG GRAD
+2024-02-23 05:50:51,396 	Gloss Hypothesis:	*** ****** ***** **** **** ******* ***** ******* **** ******* ****** ******* ****
+2024-02-23 05:50:51,396 	Gloss Alignment :	D   D      D     D    D    D       D     D       D    D       D      D       D   
+2024-02-23 05:50:51,396 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:50:51,430 	Text Reference  :	im osten mit der sonne wird   es nochmal am wärmsten dort durchaus bis   sechsundzwanzig im süden *** ** bis siebenundzwanzig grad      
+2024-02-23 05:50:51,431 	Text Hypothesis :	** ***** *** am  tag   regnet es ******* ** ******** in   der      mitte und             im süden ist es zum teil             freundlich
+2024-02-23 05:50:51,431 	Text Alignment  :	D  D     D   S   S     S         D       D  D        S    S        S     S                        I   I  S   S                S         
+2024-02-23 05:50:51,431 ========================================================================================================================
+2024-02-23 05:50:51,431 Logging Sequence: 12November_2009_Thursday_tagesschau-6771
+2024-02-23 05:50:51,432 	Gloss Reference :	SUED MEISTENS TROCKEN EINIGE WOLKE NEBEL MAL SONNE
+2024-02-23 05:50:51,432 	Gloss Hypothesis:	**** ******** ******* ****** ***** ***** *** *****
+2024-02-23 05:50:51,432 	Gloss Alignment :	D    D        D       D      D     D     D   D    
+2024-02-23 05:50:51,432 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:50:51,439 	Text Reference  :	im süden bleibt es meist trocken zwischen einigen wolken und nebelfeldern zeigt sich hier und   da  die sonne 
+2024-02-23 05:50:51,440 	Text Hypothesis :	am tag   regnet es ***** ******* in       der     mitte  und ************ ***** **** im   süden ist es  windig
+2024-02-23 05:50:51,440 	Text Alignment  :	S  S     S         D     D       S        S       S          D            D     D    S    S     S   S   S     
+2024-02-23 05:50:51,441 ========================================================================================================================
+2024-02-23 05:50:51,441 Logging Sequence: 13May_2010_Thursday_tagesschau-7916
+2024-02-23 05:50:51,460 	Gloss Reference :	JETZT WETTER MORGEN FREITAG VIERZEHN MAI
+2024-02-23 05:50:51,461 	Gloss Hypothesis:	***** ****** ****** ******* ******** ***
+2024-02-23 05:50:51,461 	Gloss Alignment :	D     D      D      D       D        D  
+2024-02-23 05:50:51,461 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:50:51,462 	Text Reference  :	** *** ****** und nun die wettervorhersage für morgen freitag den vierzehnten mai   
+2024-02-23 05:50:51,463 	Text Hypothesis :	am tag regnet es  in  der mitte            und im     süden   ist es          windig
+2024-02-23 05:50:51,463 	Text Alignment  :	I  I   I      S   S   S   S                S   S      S       S   S           S     
+2024-02-23 05:50:51,463 ========================================================================================================================
+2024-02-23 05:50:51,463 Logging Sequence: 27May_2011_Friday_tagesschau-8133
+2024-02-23 05:50:51,463 	Gloss Reference :	DIENSTAG KOMMEN REGEN KOENNEN GEWITTER UNWETTER REGEN HAGEL KRAEFTIG WIND KOENNEN
+2024-02-23 05:50:51,463 	Gloss Hypothesis:	******** ****** ***** ******* ******** ******** ***** ***** ******** **** *******
+2024-02-23 05:50:51,463 	Gloss Alignment :	D        D      D     D       D        D        D     D     D        D    D      
+2024-02-23 05:50:51,463 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:50:51,490 	Text Reference  :	am dienstag breitet sich von westen regen aus    lokal sind auch gewittrige unwetter mit starkregen hagel und schweren sturmböen dabei     
+2024-02-23 05:50:51,491 	Text Hypothesis :	am ******** ******* **** *** ****** tag   regnet es    in   der  mitte      und      im  süden      ist   es  zum      teil      freundlich
+2024-02-23 05:50:51,491 	Text Alignment  :	   D        D       D    D   D      S     S      S     S    S    S          S        S   S          S     S   S        S         S         
+2024-02-23 05:50:51,491 ========================================================================================================================
+2024-02-23 05:53:41,692 Epoch   4: Total Training Recognition Loss 1123.70  Total Training Translation Loss 9771.94 
+2024-02-23 05:53:41,696 EPOCH 5
+2024-02-23 05:54:03,118 [Epoch: 005 Step: 00000900] Batch Recognition Loss:   4.834121 => Gls Tokens per Sec:      130 || Batch Translation Loss:  44.035343 => Txt Tokens per Sec:      242 || Lr: 0.001000
+2024-02-23 05:56:33,387 Validation result at epoch   5, step      900: duration: 150.2672s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 99.54249	Translation Loss: 24401.21289	PPL: 27.79535
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 1.01	(BLEU-1: 8.85,	BLEU-2: 2.86,	BLEU-3: 1.55,	BLEU-4: 1.01)
+	CHRF 20.35	ROUGE 8.28
+2024-02-23 05:56:33,391 Logging Recognition and Translation Outputs
+2024-02-23 05:56:33,392 ========================================================================================================================
+2024-02-23 05:56:33,392 Logging Sequence: 30January_2013_Wednesday_tagesschau-477
+2024-02-23 05:56:33,392 	Gloss Reference :	SONNTAG WAHRSCHEINLICH FREUNDLICH IM-VERLAUF WEST SCHNEE SCHNEIEN REGEN
+2024-02-23 05:56:33,393 	Gloss Hypothesis:	******* ************** ********** ********** **** ****** ******** *****
+2024-02-23 05:56:33,393 	Gloss Alignment :	D       D              D          D          D    D      D        D    
+2024-02-23 05:56:33,393 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:56:33,394 	Text Reference  :	am sonntag ist es zunächst mitunter freundlich später im       norden und    westen schnee und     regen
+2024-02-23 05:56:33,394 	Text Hypothesis :	** ******* *** ** ******** ******** und        die    nächsten tage   werden die    wolken dichter sein 
+2024-02-23 05:56:33,394 	Text Alignment  :	D  D       D   D  D        D        S          S      S        S      S      S      S      S       S    
+2024-02-23 05:56:33,394 ========================================================================================================================
+2024-02-23 05:56:33,394 Logging Sequence: 23April_2010_Friday_tagesschau-3668
+2024-02-23 05:56:33,394 	Gloss Reference :	MORGEN ZEHN BIS FUENFZEHN REGION SECHSZEHN BIS DREI ZWANZIG
+2024-02-23 05:56:33,394 	Gloss Hypothesis:	****** **** *** ********* ****** ********* *** **** *******
+2024-02-23 05:56:33,394 	Gloss Alignment :	D      D    D   D         D      D         D   D    D      
+2024-02-23 05:56:33,394 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:56:33,396 	Text Reference  :	*** *** ******** **** ****** *** dort       morgen zehn bis  fünfzehn sonst sechzehn bis dreiundzwanzig grad  
+2024-02-23 05:56:33,396 	Text Hypothesis :	und die nächsten tage werden die wetterlage stellt sich auch die      sonne und      es  bleibt         stabil
+2024-02-23 05:56:33,396 	Text Alignment  :	I   I   I        I    I      I   S          S      S    S    S        S     S        S   S              S     
+2024-02-23 05:56:33,396 ========================================================================================================================
+2024-02-23 05:56:33,396 Logging Sequence: 29November_2011_Tuesday_tagesschau-5619
+2024-02-23 05:56:33,396 	Gloss Reference :	NACHT SECHS GRAD SEE MINUS DREI FLUSS
+2024-02-23 05:56:33,396 	Gloss Hypothesis:	***** ***** **** *** ***** **** *****
+2024-02-23 05:56:33,396 	Gloss Alignment :	D     D     D    D   D     D    D    
+2024-02-23 05:56:33,396 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:56:33,420 	Text Reference  :	in der nacht sechs grad an der nordsee und *** minus    drei grad   an  der    unteren donau
+2024-02-23 05:56:33,421 	Text Hypothesis :	** *** ***** ***** **** ** *** ******* und die nächsten tage werden die wolken dichter sein 
+2024-02-23 05:56:33,421 	Text Alignment  :	D  D   D     D     D    D  D   D           I   S        S    S      S   S      S       S    
+2024-02-23 05:56:33,421 ========================================================================================================================
+2024-02-23 05:56:33,421 Logging Sequence: 19January_2011_Wednesday_tagesschau-7068
+2024-02-23 05:56:33,421 	Gloss Reference :	JETZT WETTER VORAUS INFORMIEREN MORGEN DONNERSTAG ZWANZIG JANUAR
+2024-02-23 05:56:33,421 	Gloss Hypothesis:	***** ****** ****** *********** ****** ********** ******* ******
+2024-02-23 05:56:33,421 	Gloss Alignment :	D     D      D      D           D      D          D       D     
+2024-02-23 05:56:33,421 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:56:33,422 	Text Reference  :	und nun die wettervorhersage für  morgen donnerstag den    zwanzigsten januar
+2024-02-23 05:56:33,422 	Text Hypothesis :	und *** die nächsten         tage werden die        wolken dichter     sein  
+2024-02-23 05:56:33,422 	Text Alignment  :	    D       S                S    S      S          S      S           S     
+2024-02-23 05:56:33,422 ========================================================================================================================
+2024-02-23 05:56:33,422 Logging Sequence: 27June_2010_Sunday_tagesschau-7386
+2024-02-23 05:56:33,422 	Gloss Reference :	DIENSTAG MITTWOCH TIEF KOMMEN MOEGLICH REGEN GEWITTER
+2024-02-23 05:56:33,422 	Gloss Hypothesis:	******** ******** **** ****** ******** ***** ********
+2024-02-23 05:56:33,422 	Gloss Alignment :	D        D        D    D      D        D     D       
+2024-02-23 05:56:33,422 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 05:56:33,423 	Text Reference  :	dienstag und mittwoch machen sich dann ausläufer eines    atlantiktiefs mit    schauern und    gewittern bemerkbar
+2024-02-23 05:56:33,423 	Text Hypothesis :	******** und ******** ****** **** **** die       nächsten tage          werden die      wolken dichter   sein     
+2024-02-23 05:56:33,424 	Text Alignment  :	D            D        D      D    D    S         S        S             S      S        S      S         S        
+2024-02-23 05:56:33,424 ========================================================================================================================
+2024-02-23 05:59:50,886 [Epoch: 005 Step: 00001000] Batch Recognition Loss:   5.256686 => Gls Tokens per Sec:      132 || Batch Translation Loss:  24.767582 => Txt Tokens per Sec:      253 || Lr: 0.001000
+2024-02-23 06:02:28,292 Validation result at epoch   5, step     1000: duration: 157.4033s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 97.42912	Translation Loss: 24305.61133	PPL: 27.43562
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.33	(BLEU-1: 8.37,	BLEU-2: 3.01,	BLEU-3: 0.98,	BLEU-4: 0.33)
+	CHRF 19.15	ROUGE 8.96
+2024-02-23 06:02:28,294 Logging Recognition and Translation Outputs
+2024-02-23 06:02:28,294 ========================================================================================================================
+2024-02-23 06:02:28,294 Logging Sequence: 06July_2009_Monday_tagesschau-2109
+2024-02-23 06:02:28,295 	Gloss Reference :	MORGEN WERT EIFEL ACHTZEHN BIS SECHS ZWANZIG LAND
+2024-02-23 06:02:28,295 	Gloss Hypothesis:	****** **** ***** ******** *** ***** ******* ****
+2024-02-23 06:02:28,295 	Gloss Alignment :	D      D    D     D        D   D     D       D   
+2024-02-23 06:02:28,295 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:02:28,298 	Text Reference  :	*** ** **** ** **** ****** *** morgen   reichen die werte von  achtzehn grad in     der    eifel bis sechsundzwanzig grad in *** der      lausitz
+2024-02-23 06:02:28,298 	Text Hypothesis :	und da wird es auch wieder ein bisschen kühler  und es    wird aber     auch wieder kühler und   es  wird            auch in den nächsten tagen  
+2024-02-23 06:02:28,298 	Text Alignment  :	I   I  I    I  I    I      I   S        S       S   S     S    S        S    S      S      S     S   S               S       I   S        S      
+2024-02-23 06:02:28,298 ========================================================================================================================
+2024-02-23 06:02:28,298 Logging Sequence: 31May_2011_Tuesday_tagesschau-4294
+2024-02-23 06:02:28,299 	Gloss Reference :	DEUTSCH WETTER DIENST WARNUNG
+2024-02-23 06:02:28,299 	Gloss Hypothesis:	******* ****** ****** *******
+2024-02-23 06:02:28,299 	Gloss Alignment :	D       D      D      D      
+2024-02-23 06:02:28,299 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:02:28,300 	Text Reference  :	*** ** **** ** ***** ****** *** ******** ****** *** es **** ** gelten warnungen des deutschen wetterdienstes
+2024-02-23 06:02:28,300 	Text Hypothesis :	und da wird es schon wieder ein bisschen kühler und es wird ja schon  wieder    ein bisschen  kühler        
+2024-02-23 06:02:28,300 	Text Alignment  :	I   I  I    I  I     I      I   I        I      I      I    I  S      S         S   S         S             
+2024-02-23 06:02:28,300 ========================================================================================================================
+2024-02-23 06:02:28,300 Logging Sequence: 28September_2009_Monday_tagesschau-4680
+2024-02-23 06:02:28,300 	Gloss Reference :	TAG VIERZEHN NORD REGEN EINS ZWANZIG FLUSS
+2024-02-23 06:02:28,300 	Gloss Hypothesis:	*** ******** **** ***** **** ******* *****
+2024-02-23 06:02:28,300 	Gloss Alignment :	D   D        D    D     D    D       D    
+2024-02-23 06:02:28,300 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:02:28,303 	Text Reference  :	*** ** **** ** **** ****** *** ******** ****** am  tag dann vierzehn grad   an     den küsten bei  regen einundzwanzig grad am       oberrhein
+2024-02-23 06:02:28,303 	Text Hypothesis :	und da wird es auch wieder ein bisschen kühler und es  wird auch     wieder kühler und es     wird auch  in            den  nächsten tagen    
+2024-02-23 06:02:28,303 	Text Alignment  :	I   I  I    I  I    I      I   I        I      S   S   S    S        S      S      S   S      S    S     S             S    S        S        
+2024-02-23 06:02:28,303 ========================================================================================================================
+2024-02-23 06:02:28,303 Logging Sequence: 23September_2009_Wednesday_tagesschau-7593
+2024-02-23 06:02:28,303 	Gloss Reference :	SONNTAG SCHEINEN ALPEN AUCH SCHAUER MOEGLICH
+2024-02-23 06:02:28,303 	Gloss Hypothesis:	******* ******** ***** **** ******* ********
+2024-02-23 06:02:28,303 	Gloss Alignment :	D       D        D     D    D       D       
+2024-02-23 06:02:28,303 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:02:28,305 	Text Reference  :	*** ** **** ** am   sonntag viel sonne    an     den alpen sind einzelne schauer möglich
+2024-02-23 06:02:28,305 	Text Hypothesis :	und da wird es auch wieder  ein  bisschen kühler und es    wird auch     wieder  kühler 
+2024-02-23 06:02:28,305 	Text Alignment  :	I   I  I    I  S    S       S    S        S      S   S     S    S        S       S      
+2024-02-23 06:02:28,305 ========================================================================================================================
+2024-02-23 06:02:28,305 Logging Sequence: 23March_2011_Wednesday_tagesschau-8751
+2024-02-23 06:02:28,305 	Gloss Reference :	NORDOST WIEDER WOLKE ABER SONST NUR BISSCHEN WOLKE
+2024-02-23 06:02:28,305 	Gloss Hypothesis:	******* ****** ***** **** ***** *** ******** *****
+2024-02-23 06:02:28,305 	Gloss Alignment :	D       D      D     D    D     D   D        D    
+2024-02-23 06:02:28,305 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:02:28,339 	Text Reference  :	*** ** **** ** **** ****** über den      norden und ** **** nordosten ziehen wieder einige wolken durch ansonsten nur  ein  paar schleierwolken
+2024-02-23 06:02:28,339 	Text Hypothesis :	und da wird es auch wieder ein  bisschen kühler und es wird aber      auch   wieder ****** kühler und   es        wird auch in   süddeutschland
+2024-02-23 06:02:28,339 	Text Alignment  :	I   I  I    I  I    I      S    S        S          I  I    S         S             D      S      S     S         S    S    S    S             
+2024-02-23 06:02:28,339 ========================================================================================================================
+2024-02-23 06:05:47,010 [Epoch: 005 Step: 00001100] Batch Recognition Loss:   4.330020 => Gls Tokens per Sec:      122 || Batch Translation Loss:  35.690342 => Txt Tokens per Sec:      236 || Lr: 0.001000
+2024-02-23 06:08:15,695 Validation result at epoch   5, step     1100: duration: 148.6695s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 97.42520	Translation Loss: 23656.52539	PPL: 25.11333
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.50	(BLEU-1: 7.83,	BLEU-2: 3.33,	BLEU-3: 1.16,	BLEU-4: 0.50)
+	CHRF 14.74	ROUGE 8.33
+2024-02-23 06:08:15,698 Logging Recognition and Translation Outputs
+2024-02-23 06:08:15,698 ========================================================================================================================
+2024-02-23 06:08:15,698 Logging Sequence: 21August_2011_Sunday_tagesschau-265
+2024-02-23 06:08:15,699 	Gloss Reference :	MITTE REGION WOLKE MORGEN KOENNEN REGEN GEWITTER
+2024-02-23 06:08:15,699 	Gloss Hypothesis:	***** ****** ***** ****** ******* ***** ********
+2024-02-23 06:08:15,699 	Gloss Alignment :	D     D      D     D      D       D     D       
+2024-02-23 06:08:15,699 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:08:15,705 	Text Reference  :	in der mitte halten sich allerdings wolken die morgen stellenweise für  schauer oder gewitter sorgen
+2024-02-23 06:08:15,705 	Text Hypothesis :	** *** ***** ****** **** heute      nacht  ist es     teils        klar teils   klar teils    klar  
+2024-02-23 06:08:15,705 	Text Alignment  :	D  D   D     D      D    S          S      S   S      S            S    S       S    S        S     
+2024-02-23 06:08:15,705 ========================================================================================================================
+2024-02-23 06:08:15,705 Logging Sequence: 02October_2012_Tuesday_heute-3494
+2024-02-23 06:08:15,705 	Gloss Reference :	HEUTE NACHT neg-KAUM NUR NORDWEST BISSCHEN REGEN SONST REGION RUHIG
+2024-02-23 06:08:15,705 	Gloss Hypothesis:	***** ***** ******** *** ******** ******** ***** ***** ****** *****
+2024-02-23 06:08:15,706 	Gloss Alignment :	D     D     D        D   D        D        D     D     D      D    
+2024-02-23 06:08:15,706 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:08:15,708 	Text Reference  :	heute nacht das ist aber kaum von bedeutung da  gibt   es ein paar regentropfen im nordwesten sonst bleibt   alles     ruhig  
+2024-02-23 06:08:15,709 	Text Hypothesis :	***** ***** *** *** **** **** *** am        tag regnet es *** **** zeitweise    im norden     und   südosten teilweise kräftig
+2024-02-23 06:08:15,709 	Text Alignment  :	D     D     D   D   D    D    D   S         S   S         D   D    S               S          S     S        S         S      
+2024-02-23 06:08:15,709 ========================================================================================================================
+2024-02-23 06:08:15,709 Logging Sequence: 20June_2011_Monday_heute-6514
+2024-02-23 06:08:15,709 	Gloss Reference :	DANN WETTER WECHSELHAFT
+2024-02-23 06:08:15,709 	Gloss Hypothesis:	**** ****** ***********
+2024-02-23 06:08:15,709 	Gloss Alignment :	D    D      D          
+2024-02-23 06:08:15,709 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:08:15,710 	Text Reference  :	** ***** und eher wechselhaft geht   es mit unserem wetter auch weiter 
+2024-02-23 06:08:15,710 	Text Hypothesis :	im süden und **** süden       bleibt es *** ******* ****** **** trocken
+2024-02-23 06:08:15,710 	Text Alignment  :	I  I         D    S           S         D   D       D      D    S      
+2024-02-23 06:08:15,710 ========================================================================================================================
+2024-02-23 06:08:15,710 Logging Sequence: 24January_2011_Monday_heute-6984
+2024-02-23 06:08:15,711 	Gloss Reference :	MITTWOCH SONNE NICHT NUR WEST SCHNEE REGEN MISCHUNG DANN BEISEITE
+2024-02-23 06:08:15,711 	Gloss Hypothesis:	******** ***** ***** *** **** ****** ***** ******** **** ********
+2024-02-23 06:08:15,711 	Gloss Alignment :	D        D     D     D   D    D      D     D        D    D       
+2024-02-23 06:08:15,711 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:08:15,713 	Text Reference  :	mittwoch keine sonne dafür im    westen schneeregen und   schnee aber  dann wird  es   langsam trockener
+2024-02-23 06:08:15,713 	Text Hypothesis :	******** ***** ***** heute nacht ist    es          teils klar   teils klar teils klar teils   klar     
+2024-02-23 06:08:15,713 	Text Alignment  :	D        D     D     S     S     S      S           S     S      S     S    S     S    S       S        
+2024-02-23 06:08:15,713 ========================================================================================================================
+2024-02-23 06:08:15,713 Logging Sequence: 25January_2013_Friday_tagesschau-7815
+2024-02-23 06:08:15,714 	Gloss Reference :	MORGEN TEIL UEBERWIEGEND WOLKE TEIL SONNE OST UEBERWIEGEND MEHR SONNE DABEI
+2024-02-23 06:08:15,714 	Gloss Hypothesis:	****** **** ************ ***** **** ***** *** ************ **** ***** *****
+2024-02-23 06:08:15,714 	Gloss Alignment :	D      D    D            D     D    D     D   D            D    D     D    
+2024-02-23 06:08:15,714 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:08:15,716 	Text Reference  :	morgen teils dicht bewölkt teils sonnig wobei sich       die  sonne im      osten   am     häufigsten zeigt
+2024-02-23 06:08:15,716 	Text Hypothesis :	****** ***** ***** heute   nacht ist    es    verbreitet klar und   trocken örtlich bildet sich       nebel
+2024-02-23 06:08:15,716 	Text Alignment  :	D      D     D     S       S     S      S     S          S    S     S       S       S      S          S    
+2024-02-23 06:08:15,717 ========================================================================================================================
+2024-02-23 06:08:36,418 Epoch   5: Total Training Recognition Loss 1100.04  Total Training Translation Loss 9157.82 
+2024-02-23 06:08:36,421 EPOCH 6
+2024-02-23 06:11:36,304 [Epoch: 006 Step: 00001200] Batch Recognition Loss:   4.699649 => Gls Tokens per Sec:      124 || Batch Translation Loss:  21.276787 => Txt Tokens per Sec:      238 || Lr: 0.001000
+2024-02-23 06:14:02,736 Validation result at epoch   6, step     1200: duration: 146.4293s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 99.92845	Translation Loss: 24003.65820	PPL: 26.32973
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.62	(BLEU-1: 11.31,	BLEU-2: 3.20,	BLEU-3: 1.26,	BLEU-4: 0.62)
+	CHRF 19.42	ROUGE 9.91
+2024-02-23 06:14:02,740 Logging Recognition and Translation Outputs
+2024-02-23 06:14:02,740 ========================================================================================================================
+2024-02-23 06:14:02,740 Logging Sequence: 21October_2009_Wednesday_tagesschau-735
+2024-02-23 06:14:02,741 	Gloss Reference :	FRANKREICH KOMMEN WOLKE OST NIEDERSACHSEN BAYERN SUEDWEST REGEN
+2024-02-23 06:14:02,742 	Gloss Hypothesis:	********** ****** ***** *** ************* ****** ******** *****
+2024-02-23 06:14:02,742 	Gloss Alignment :	D          D      D     D   D             D      D        D    
+2024-02-23 06:14:02,742 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:14:02,748 	Text Reference  :	von frankreich breiten sich heute nacht dichte wolken ostwärts bis      nach  niedersachsen und bayern aus      im    westen und südwesten fällt    regen
+2024-02-23 06:14:02,748 	Text Hypothesis :	und das        wird    sich ***** ***** auch   in     den      nächsten tagen weiter        in  den    nächsten tagen weiter in  den       nächsten tagen
+2024-02-23 06:14:02,748 	Text Alignment  :	S   S          S            D     D     S      S      S        S        S     S             S   S      S        S     S      S   S         S        S    
+2024-02-23 06:14:02,748 ========================================================================================================================
+2024-02-23 06:14:02,749 Logging Sequence: 06August_2010_Friday_tagesschau-2172
+2024-02-23 06:14:02,750 	Gloss Reference :	JETZT WETTER WIE-AUSSEHEN MORGEN SAMSTAG SIEBTE AUGUST
+2024-02-23 06:14:02,750 	Gloss Hypothesis:	***** ****** ************ ****** ******* ****** ******
+2024-02-23 06:14:02,750 	Gloss Alignment :	D     D      D            D      D       D      D     
+2024-02-23 06:14:02,751 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:14:02,754 	Text Reference  :	und *** **** **** ************ ****** *** **** *** **** nun die wettervorhersage für morgen samstag den siebten  august
+2024-02-23 06:14:02,754 	Text Hypothesis :	und das tief über skandinavien bringt uns noch ein tief mit dem regen            und auch   in      den nächsten tagen 
+2024-02-23 06:14:02,754 	Text Alignment  :	    I   I    I    I            I      I   I    I   I    S   S   S                S   S      S           S        S     
+2024-02-23 06:14:02,754 ========================================================================================================================
+2024-02-23 06:14:02,754 Logging Sequence: 24October_2009_Saturday_tagesschau-4284
+2024-02-23 06:14:02,755 	Gloss Reference :	IX REGEN KOENNEN BESONDERS NORD
+2024-02-23 06:14:02,755 	Gloss Hypothesis:	** ***** ******* ********* ****
+2024-02-23 06:14:02,755 	Gloss Alignment :	D  D     D       D         D   
+2024-02-23 06:14:02,755 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:14:02,758 	Text Reference  :	*** **** ** sonst gibt     es    hier und da   schauer besonders richtung nordsee     
+2024-02-23 06:14:02,758 	Text Hypothesis :	und auch in den   nächsten tagen wird es  dann auch    noch      etwas    freundlicher
+2024-02-23 06:14:02,758 	Text Alignment  :	I   I    I  S     S        S     S    S   S    S       S         S        S           
+2024-02-23 06:14:02,758 ========================================================================================================================
+2024-02-23 06:14:02,758 Logging Sequence: 06October_2011_Thursday_heute-5532
+2024-02-23 06:14:02,758 	Gloss Reference :	LIEB ZUSCHAUER GUT ABEND
+2024-02-23 06:14:02,758 	Gloss Hypothesis:	**** ********* *** *****
+2024-02-23 06:14:02,758 	Gloss Alignment :	D    D         D   D    
+2024-02-23 06:14:02,758 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:14:02,759 	Text Reference  :	*** ** **** **** liebe zuschauer guten    abend 
+2024-02-23 06:14:02,759 	Text Hypothesis :	und es wird auch noch  ein       bisschen kühler
+2024-02-23 06:14:02,759 	Text Alignment  :	I   I  I    I    S     S         S        S     
+2024-02-23 06:14:02,759 ========================================================================================================================
+2024-02-23 06:14:02,759 Logging Sequence: 29July_2010_Thursday_tagesschau-7411
+2024-02-23 06:14:02,759 	Gloss Reference :	A HOCH KOMMEN SAMSTAG SONNTAG MEHR SONNE TEMPERATUR STEIGEN
+2024-02-23 06:14:02,759 	Gloss Hypothesis:	* **** ****** ******* ******* **** ***** ********** *******
+2024-02-23 06:14:02,760 	Gloss Alignment :	D D    D      D       D       D    D     D          D      
+2024-02-23 06:14:02,760 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:14:02,764 	Text Reference  :	*** das **** **** azorenhoch   schickt uns einen ableger der zumindest am  wochenende für   mehr sonne und steigende temperaturen sorgt
+2024-02-23 06:14:02,764 	Text Hypothesis :	und das tief über skandinavien bringt  uns ***** noch    ein tief      mit dem        regen und  auch  in  den       nächsten     tagen
+2024-02-23 06:14:02,764 	Text Alignment  :	I       I    I    S            S           D     S       S   S         S   S          S     S    S     S   S         S            S    
+2024-02-23 06:14:02,764 ========================================================================================================================
+2024-02-23 06:17:19,295 [Epoch: 006 Step: 00001300] Batch Recognition Loss:   4.646056 => Gls Tokens per Sec:      127 || Batch Translation Loss:  23.654549 => Txt Tokens per Sec:      245 || Lr: 0.001000
+2024-02-23 06:19:34,297 Validation result at epoch   6, step     1300: duration: 134.9987s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 100.00012	Translation Loss: 23719.70312	PPL: 25.33046
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.00	(BLEU-1: 12.35,	BLEU-2: 3.23,	BLEU-3: 0.97,	BLEU-4: 0.00)
+	CHRF 18.73	ROUGE 11.06
+2024-02-23 06:19:34,300 Logging Recognition and Translation Outputs
+2024-02-23 06:19:34,300 ========================================================================================================================
+2024-02-23 06:19:34,300 Logging Sequence: 19August_2010_Thursday_tagesschau-995
+2024-02-23 06:19:34,301 	Gloss Reference :	SAMSTAG HAUPTSAECHLICH SONNE NORD BISSCHEN REGEN
+2024-02-23 06:19:34,301 	Gloss Hypothesis:	******* ************** ***** **** ******** *****
+2024-02-23 06:19:34,301 	Gloss Alignment :	D       D              D     D    D        D    
+2024-02-23 06:19:34,301 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:19:34,302 	Text Reference  :	am  samstag viel         sonne  ganz im   norden einzelne schauer 
+2024-02-23 06:19:34,302 	Text Hypothesis :	und die     temperaturen werden dann auch noch   ein      bisschen
+2024-02-23 06:19:34,302 	Text Alignment  :	S   S       S            S      S    S    S      S        S       
+2024-02-23 06:19:34,302 ========================================================================================================================
+2024-02-23 06:19:34,302 Logging Sequence: 10February_2010_Wednesday_tagesschau-2524
+2024-02-23 06:19:34,302 	Gloss Reference :	SONNTAG SCHNEE WENIG NORD REGION MOEGLICH SONNE
+2024-02-23 06:19:34,302 	Gloss Hypothesis:	******* ****** ***** **** ****** ******** *****
+2024-02-23 06:19:34,302 	Gloss Alignment :	D       D      D     D    D      D        D    
+2024-02-23 06:19:34,302 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:19:34,303 	Text Reference  :	*** am  sonntag      nur    noch wenig schnee im  norden   zeigt     sich teilweise die sonne
+2024-02-23 06:19:34,304 	Text Hypothesis :	und die temperaturen werden dann auch  noch   ein bisschen verhalten bis  zu        den alpen
+2024-02-23 06:19:34,304 	Text Alignment  :	I   S   S            S      S    S     S      S   S        S         S    S         S   S    
+2024-02-23 06:19:34,304 ========================================================================================================================
+2024-02-23 06:19:34,304 Logging Sequence: 20February_2011_Sunday_tagesschau-3164
+2024-02-23 06:19:34,304 	Gloss Reference :	WETTER WIE-AUSSEHEN MORGEN MONTAG EINS ZWANZIG FEBRUAR
+2024-02-23 06:19:34,304 	Gloss Hypothesis:	****** ************ ****** ****** **** ******* *******
+2024-02-23 06:19:34,304 	Gloss Alignment :	D      D            D      D      D    D       D      
+2024-02-23 06:19:34,304 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:19:34,305 	Text Reference  :	und nun die ************ ****** **** **** **** *** wettervorhersage für       morgen montag den   einundzwanzigsten februar
+2024-02-23 06:19:34,330 	Text Hypothesis :	und *** die temperaturen werden dann auch noch ein bisschen         verhalten bis    zu     minus acht              grad   
+2024-02-23 06:19:34,330 	Text Alignment  :	    D       I            I      I    I    I    I   S                S         S      S      S     S                 S      
+2024-02-23 06:19:34,330 ========================================================================================================================
+2024-02-23 06:19:34,330 Logging Sequence: 17January_2011_Monday_tagesschau-7003
+2024-02-23 06:19:34,331 	Gloss Reference :	REST REGION MEHR MEISTENS WOLKE BESONDERS KUESTE IX MEHR REGEN
+2024-02-23 06:19:34,331 	Gloss Hypothesis:	**** ****** **** ******** ***** ********* ****** ** **** *****
+2024-02-23 06:19:34,331 	Gloss Alignment :	D    D      D    D        D     D         D      D  D    D    
+2024-02-23 06:19:34,331 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:19:34,332 	Text Reference  :	im übrigen land dominieren   wolken vor allem richtung küsten regnet es  
+2024-02-23 06:19:34,332 	Text Hypothesis :	** und     die  temperaturen werden bei null  bis      minus  acht   grad
+2024-02-23 06:19:34,332 	Text Alignment  :	D  S       S    S            S      S   S     S        S      S      S   
+2024-02-23 06:19:34,332 ========================================================================================================================
+2024-02-23 06:19:34,332 Logging Sequence: 29March_2010_Monday_tagesschau-8384
+2024-02-23 06:19:34,332 	Gloss Reference :	JETZT MORGEN WETTER WIE-AUSSEHEN DIENSTAG DREISSIG MAERZ
+2024-02-23 06:19:34,332 	Gloss Hypothesis:	***** ****** ****** ************ ******** ******** *****
+2024-02-23 06:19:34,332 	Gloss Alignment :	D     D      D      D            D        D        D    
+2024-02-23 06:19:34,332 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:19:34,333 	Text Reference  :	und nun die ************ wettervorhersage für morgen dienstag den   dreißigsten märz
+2024-02-23 06:19:34,333 	Text Hypothesis :	und *** die temperaturen werden           bei null   bis      minus acht        grad
+2024-02-23 06:19:34,333 	Text Alignment  :	    D       I            S                S   S      S        S     S           S   
+2024-02-23 06:19:34,333 ========================================================================================================================
+2024-02-23 06:20:36,050 Epoch   6: Total Training Recognition Loss 1061.62  Total Training Translation Loss 8630.96 
+2024-02-23 06:20:36,053 EPOCH 7
+2024-02-23 06:22:45,557 [Epoch: 007 Step: 00001400] Batch Recognition Loss:   4.558799 => Gls Tokens per Sec:      131 || Batch Translation Loss:  26.225294 => Txt Tokens per Sec:      254 || Lr: 0.001000
+2024-02-23 06:25:14,664 Validation result at epoch   7, step     1400: duration: 149.1058s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 99.73389	Translation Loss: 25301.65625	PPL: 31.42368
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 1.76	(BLEU-1: 11.33,	BLEU-2: 4.54,	BLEU-3: 2.57,	BLEU-4: 1.76)
+	CHRF 21.10	ROUGE 11.65
+2024-02-23 06:25:14,667 Logging Recognition and Translation Outputs
+2024-02-23 06:25:14,667 ========================================================================================================================
+2024-02-23 06:25:14,667 Logging Sequence: 04August_2011_Thursday_tagesschau-718
+2024-02-23 06:25:14,668 	Gloss Reference :	MONTAG AUCH WECHSELHAFT UND MEHR KUEHL
+2024-02-23 06:25:14,668 	Gloss Hypothesis:	****** **** *********** *** **** *****
+2024-02-23 06:25:14,668 	Gloss Alignment :	D      D    D           D   D    D    
+2024-02-23 06:25:14,668 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:25:14,670 	Text Reference  :	*** ** **** auch der  montag verläuft unbeständig und **** **** es **** **** wird kühler        
+2024-02-23 06:25:14,670 	Text Hypothesis :	und es wird auch noch ein    bisschen kühler      und dazu wird es dann auch in   süddeutschland
+2024-02-23 06:25:14,671 	Text Alignment  :	I   I  I         S    S      S        S               I    I       I    I    S    S             
+2024-02-23 06:25:14,671 ========================================================================================================================
+2024-02-23 06:25:14,671 Logging Sequence: 23September_2010_Thursday_tagesschau-3444
+2024-02-23 06:25:14,671 	Gloss Reference :	REGION BIS ABEND TROCKEN
+2024-02-23 06:25:14,671 	Gloss Hypothesis:	****** *** ***** *******
+2024-02-23 06:25:14,671 	Gloss Alignment :	D      D   D     D      
+2024-02-23 06:25:14,671 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:25:14,674 	Text Reference  :	*** ** **** von  der  lausitz bis      nach   ostbayern bleibt es bis zum  abend noch trocken       
+2024-02-23 06:25:14,674 	Text Hypothesis :	und es wird auch noch ein     bisschen kühler dazu      wird   es *** dann auch  in   süddeutschland
+2024-02-23 06:25:14,674 	Text Alignment  :	I   I  I    S    S    S       S        S      S         S         D   S    S     S    S             
+2024-02-23 06:25:14,674 ========================================================================================================================
+2024-02-23 06:25:14,674 Logging Sequence: 03November_2010_Wednesday_tagesschau-6506
+2024-02-23 06:25:14,674 	Gloss Reference :	SUED WEHEN BISSCHEN WEHEN NORD FRISCH NATUR STARK STURM SEE MEER SCHWER STURM BERG E+R+Z BERG AUCH ORKAN
+2024-02-23 06:25:14,674 	Gloss Hypothesis:	**** ***** ******** ***** **** ****** ***** ***** ***** *** **** ****** ***** **** ***** **** **** *****
+2024-02-23 06:25:14,674 	Gloss Alignment :	D    D     D        D     D    D      D     D     D     D   D    D      D     D    D     D    D    D    
+2024-02-23 06:25:14,675 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:25:14,686 	Text Reference  :	im süden bläst der  wind mäßig im   norden frisch   bis    stark mit stürmischen böen an   der  see und auf            den  bergen schwere sturmböen in den gipfellagen von harz und erzgebirge auch     orkanböen
+2024-02-23 06:25:14,687 	Text Hypothesis :	** und   es    wird ja   auch  noch ein    bisschen milder also  so  richtig     kalt aber auch in  den mittelgebirgen wird es     ja      auch      in den *********** *** **** *** ********** nächsten stunden  
+2024-02-23 06:25:14,687 	Text Alignment  :	D  S     S     S    S    S     S    S      S        S      S     S   S           S    S    S    S   S   S              S    S      S       S                D           D   D    D   D          S        S        
+2024-02-23 06:25:14,688 ========================================================================================================================
+2024-02-23 06:25:14,688 Logging Sequence: 01April_2010_Thursday_heute-6698
+2024-02-23 06:25:14,688 	Gloss Reference :	MITTAG TEMPERATUR SUED WARM poss-MEIN NICHT
+2024-02-23 06:25:14,688 	Gloss Hypothesis:	****** ********** **** **** ********* *****
+2024-02-23 06:25:14,688 	Gloss Alignment :	D      D          D    D    D         D    
+2024-02-23 06:25:14,688 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:25:14,692 	Text Reference  :	*** ** **** ** **** die  mittagstemperaturen zeigen   es     aber richtung süden wird es deutlich wärmer als  bei  uns     
+2024-02-23 06:25:14,692 	Text Hypothesis :	und es wird ja auch noch ein                 bisschen milder also heute    nacht wird es ******** dann   auch noch schneien
+2024-02-23 06:25:14,693 	Text Alignment  :	I   I  I    I  I    S    S                   S        S      S    S        S             D        S      S    S    S       
+2024-02-23 06:25:14,693 ========================================================================================================================
+2024-02-23 06:25:14,693 Logging Sequence: 24January_2011_Monday_heute-6980
+2024-02-23 06:25:14,693 	Gloss Reference :	MORGEN MEISTENS ZWEI BIS SECHS GRAD ABER BAYERN REGION BISSCHEN KALT MITTE REGION AUCH
+2024-02-23 06:25:14,693 	Gloss Hypothesis:	****** ******** **** *** ***** **** **** ****** ****** ******** **** ***** ****** ****
+2024-02-23 06:25:14,693 	Gloss Alignment :	D      D        D    D   D     D    D    D      D      D        D    D     D      D   
+2024-02-23 06:25:14,693 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:25:14,711 	Text Reference  :	und morgen haben wir meist zwischen zwei und sechs grad zu erwarten aber in bayern bleibt es   eben ein bisschen kälter und in den mittelgebirgen **** **** **** *** ******** ******
+2024-02-23 06:25:14,712 	Text Hypothesis :	*** ****** ***** *** ***** ******** **** und ***** **** es wird     auch in dieser nacht  auch noch ein bisschen regnen und in den mittelgebirgen wird auch noch ein bisschen kühler
+2024-02-23 06:25:14,712 	Text Alignment  :	D   D      D     D   D     D        D        D     D    S  S        S       S      S      S    S                 S                                I    I    I    I   I        I     
+2024-02-23 06:25:14,712 ========================================================================================================================
+2024-02-23 06:28:17,552 [Epoch: 007 Step: 00001500] Batch Recognition Loss:   4.442978 => Gls Tokens per Sec:      137 || Batch Translation Loss:  26.713463 => Txt Tokens per Sec:      261 || Lr: 0.001000
+2024-02-23 06:30:32,434 Validation result at epoch   7, step     1500: duration: 134.8790s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 100.67605	Translation Loss: 24535.47266	PPL: 28.30852
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.59	(BLEU-1: 11.55,	BLEU-2: 3.18,	BLEU-3: 1.29,	BLEU-4: 0.59)
+	CHRF 18.68	ROUGE 9.50
+2024-02-23 06:30:32,437 Logging Recognition and Translation Outputs
+2024-02-23 06:30:32,437 ========================================================================================================================
+2024-02-23 06:30:32,437 Logging Sequence: 30January_2013_Wednesday_tagesschau-477
+2024-02-23 06:30:32,438 	Gloss Reference :	SONNTAG WAHRSCHEINLICH FREUNDLICH IM-VERLAUF WEST SCHNEE SCHNEIEN REGEN
+2024-02-23 06:30:32,438 	Gloss Hypothesis:	******* ************** ********** ********** **** ****** ******** *****
+2024-02-23 06:30:32,438 	Gloss Alignment :	D       D              D          D          D    D      D        D    
+2024-02-23 06:30:32,438 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:30:32,442 	Text Reference  :	am sonntag ist es  zunächst mitunter   freundlich später im   norden und    westen schnee und regen
+2024-02-23 06:30:32,442 	Text Hypothesis :	** ******* und das ganze    wochenende wird       es     dann auch   wieder etwas  kühler als heute
+2024-02-23 06:30:32,443 	Text Alignment  :	D  D       S   S   S        S          S          S      S    S      S      S      S      S   S    
+2024-02-23 06:30:32,443 ========================================================================================================================
+2024-02-23 06:30:32,443 Logging Sequence: 15September_2010_Wednesday_heute-2476
+2024-02-23 06:30:32,443 	Gloss Reference :	IM-VERLAUF FRUEH HERBST
+2024-02-23 06:30:32,443 	Gloss Hypothesis:	********** ***** ******
+2024-02-23 06:30:32,443 	Gloss Alignment :	D          D     D     
+2024-02-23 06:30:32,443 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:30:32,444 	Text Reference  :	also der herbst geht sozusagen weiter der    frühherbst
+2024-02-23 06:30:32,444 	Text Hypothesis :	**** *** und    es   wird      auch   wieder wärmer    
+2024-02-23 06:30:32,444 	Text Alignment  :	D    D   S      S    S         S      S      S         
+2024-02-23 06:30:32,444 ========================================================================================================================
+2024-02-23 06:30:32,444 Logging Sequence: 23April_2010_Friday_tagesschau-3668
+2024-02-23 06:30:32,444 	Gloss Reference :	MORGEN ZEHN BIS FUENFZEHN REGION SECHSZEHN BIS DREI ZWANZIG
+2024-02-23 06:30:32,444 	Gloss Hypothesis:	****** **** *** ********* ****** ********* *** **** *******
+2024-02-23 06:30:32,445 	Gloss Alignment :	D      D    D   D         D      D         D   D    D      
+2024-02-23 06:30:32,445 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:30:32,446 	Text Reference  :	dort morgen zehn bis  fünfzehn sonst  sechzehn bis dreiundzwanzig grad 
+2024-02-23 06:30:32,446 	Text Hypothesis :	**** und    es   wird auch     wieder wärmer   als heute          nacht
+2024-02-23 06:30:32,446 	Text Alignment  :	D    S      S    S    S        S      S        S   S              S    
+2024-02-23 06:30:32,446 ========================================================================================================================
+2024-02-23 06:30:32,446 Logging Sequence: 10August_2010_Tuesday_tagesschau-3865
+2024-02-23 06:30:32,447 	Gloss Reference :	OST SUED HEUTE NACHT TROCKEN AUCH KLAR DANN TEIL REGION SCHAUER
+2024-02-23 06:30:32,447 	Gloss Hypothesis:	*** **** ***** ***** ******* **** **** **** **** ****** *******
+2024-02-23 06:30:32,447 	Gloss Alignment :	D   D    D     D     D       D    D    D    D    D      D      
+2024-02-23 06:30:32,447 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:30:32,451 	Text Reference  :	im osten und süden bleibt es heute nacht meist      trocken und teilweise auch noch klar sonst fällt zum    teil schauerartiger regen 
+2024-02-23 06:30:32,451 	Text Hypothesis :	** ***** und ***** ****** ** das   ganze wochenende wird    es  dann      auch **** **** ***** ***** wieder ein  bisschen       kühler
+2024-02-23 06:30:32,451 	Text Alignment  :	D  D         D     D      D  S     S     S          S       S   S              D    D    D     D     S      S    S              S     
+2024-02-23 06:30:32,451 ========================================================================================================================
+2024-02-23 06:30:32,451 Logging Sequence: 29April_2010_Thursday_heute-8622
+2024-02-23 06:30:32,451 	Gloss Reference :	MORGEN NACH MITTAG GEWITTER REGEN AUCH
+2024-02-23 06:30:32,451 	Gloss Hypothesis:	****** **** ****** ******** ***** ****
+2024-02-23 06:30:32,451 	Gloss Alignment :	D      D    D      D        D     D   
+2024-02-23 06:30:32,452 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:30:32,453 	Text Reference  :	*** *** ***** da         kommen die gewitter erst morgen nachmittag hin   
+2024-02-23 06:30:32,453 	Text Hypothesis :	und das ganze wochenende wird   es  dann     auch wieder etwas      kühler
+2024-02-23 06:30:32,453 	Text Alignment  :	I   I   I     S          S      S   S        S    S      S          S     
+2024-02-23 06:30:32,453 ========================================================================================================================
+2024-02-23 06:32:18,313 Epoch   7: Total Training Recognition Loss 1046.94  Total Training Translation Loss 8138.70 
+2024-02-23 06:32:18,315 EPOCH 8
+2024-02-23 06:33:42,495 [Epoch: 008 Step: 00001600] Batch Recognition Loss:   5.032379 => Gls Tokens per Sec:      129 || Batch Translation Loss:  31.913179 => Txt Tokens per Sec:      249 || Lr: 0.001000
+2024-02-23 06:36:18,386 Validation result at epoch   8, step     1600: duration: 155.8770s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 109.53109	Translation Loss: 24773.67188	PPL: 29.24239
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 1.22	(BLEU-1: 11.82,	BLEU-2: 4.00,	BLEU-3: 1.92,	BLEU-4: 1.22)
+	CHRF 20.24	ROUGE 10.29
+2024-02-23 06:36:18,388 Logging Recognition and Translation Outputs
+2024-02-23 06:36:18,389 ========================================================================================================================
+2024-02-23 06:36:18,389 Logging Sequence: 13August_2011_Saturday_tagesschau-1410
+2024-02-23 06:36:18,389 	Gloss Reference :	NORMAL WIND LEICHT MAESSIG KOMMEN WEHEN
+2024-02-23 06:36:18,389 	Gloss Hypothesis:	****** **** ****** ******* ****** *****
+2024-02-23 06:36:18,389 	Gloss Alignment :	D      D    D      D       D      D    
+2024-02-23 06:36:18,389 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:36:18,391 	Text Reference  :	*** *** ******** **** *** **** ***** sonst   weht    der wind meist schwach        bis mäßig aus süd   bis west  
+2024-02-23 06:36:18,391 	Text Hypothesis :	und das bedeutet dass wir noch einen starken ostwind und in   den   mittelgebirgen und auch  mit blitz und donner
+2024-02-23 06:36:18,391 	Text Alignment  :	I   I   I        I    I   I    I     S       S       S   S    S     S              S   S     S   S     S   S     
+2024-02-23 06:36:18,391 ========================================================================================================================
+2024-02-23 06:36:18,391 Logging Sequence: 22April_2010_Thursday_heute-2125
+2024-02-23 06:36:18,391 	Gloss Reference :	ABEND WUENSCHEN
+2024-02-23 06:36:18,391 	Gloss Hypothesis:	***** *********
+2024-02-23 06:36:18,392 	Gloss Alignment :	D     D        
+2024-02-23 06:36:18,392 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:36:18,392 	Text Reference  :	ich wünsche ihnen einen schönen abend und machen sie   es **** **** ***** gut   
+2024-02-23 06:36:18,392 	Text Hypothesis :	*** ******* ***** ***** ******* ***** und das    heißt es wird noch etwas kühler
+2024-02-23 06:36:18,392 	Text Alignment  :	D   D       D     D     D       D         S      S        I    I    I     S     
+2024-02-23 06:36:18,392 ========================================================================================================================
+2024-02-23 06:36:18,392 Logging Sequence: 25April_2010_Sunday_tagesschau-4951
+2024-02-23 06:36:18,393 	Gloss Reference :	DONNERSTAG BIS SECHS ZWANZIG GRAD VIEL SONNE
+2024-02-23 06:36:18,393 	Gloss Hypothesis:	********** *** ***** ******* **** **** *****
+2024-02-23 06:36:18,393 	Gloss Alignment :	D          D   D     D       D    D    D    
+2024-02-23 06:36:18,393 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:36:18,393 	Text Reference  :	*** *** am    donnerstag bis  sechsundzwanzig grad  bei    viel sonne
+2024-02-23 06:36:18,393 	Text Hypothesis :	und das heißt es         wird noch            etwas kühler als  heute
+2024-02-23 06:36:18,393 	Text Alignment  :	I   I   S     S          S    S               S     S      S    S    
+2024-02-23 06:36:18,394 ========================================================================================================================
+2024-02-23 06:36:18,394 Logging Sequence: 30March_2011_Wednesday_tagesschau-7127
+2024-02-23 06:36:18,394 	Gloss Reference :	SAMSTAG SONNTAG HOCH SPANIEN IX VERBREITEN SONNE AUCH TEIL TATSAECHLICH SCHON SOMMER TEMPERATUR
+2024-02-23 06:36:18,394 	Gloss Hypothesis:	******* ******* **** ******* ** ********** ***** **** **** ************ ***** ****** **********
+2024-02-23 06:36:18,394 	Gloss Alignment :	D       D       D    D       D  D          D     D    D    D            D     D      D         
+2024-02-23 06:36:18,394 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:36:18,396 	Text Reference  :	*** *** am    wochenende sorgt dann ein   hoch   das sich  von   spanien ausbreitet wieder für  sonnenschein und  teilweise sommerliche temperaturen
+2024-02-23 06:36:18,396 	Text Hypothesis :	und das heißt es         wird  noch etwas kälter als heute nacht und     der        wind   wird dann         auch mit       frischen    böen        
+2024-02-23 06:36:18,396 	Text Alignment  :	I   I   S     S          S     S    S     S      S   S     S     S       S          S      S    S            S    S         S           S           
+2024-02-23 06:36:18,396 ========================================================================================================================
+2024-02-23 06:36:18,396 Logging Sequence: 28May_2010_Friday_tagesschau-7496
+2024-02-23 06:36:18,396 	Gloss Reference :	HOCH KOMMEN OST KOMMEN ES-BEDEUTET MORGEN FREUNDLICH WETTER
+2024-02-23 06:36:18,396 	Gloss Hypothesis:	**** ****** *** ****** *********** ****** ********** ******
+2024-02-23 06:36:18,396 	Gloss Alignment :	D    D      D   D      D           D      D          D     
+2024-02-23 06:36:18,396 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:36:18,399 	Text Reference  :	*** das hoch über den   azoren dehnt sich über  mitteleuropa nach osten aus   und sorgt morgen kurzzeitig für  meist freundliches wetter
+2024-02-23 06:36:18,399 	Text Hypothesis :	und das **** **** heißt es     wird  noch etwas kälter       als  heute nacht und der   wind   wird       auch mit   frischen     böen  
+2024-02-23 06:36:18,399 	Text Alignment  :	I       D    D    S     S      S     S    S     S            S    S     S         S     S      S          S    S     S            S     
+2024-02-23 06:36:18,399 ========================================================================================================================
+2024-02-23 06:39:26,615 [Epoch: 008 Step: 00001700] Batch Recognition Loss:   4.614522 => Gls Tokens per Sec:      137 || Batch Translation Loss:  47.807697 => Txt Tokens per Sec:      262 || Lr: 0.000700
+2024-02-23 06:41:47,040 Validation result at epoch   8, step     1700: duration: 140.4203s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 104.14536	Translation Loss: 25094.08203	PPL: 30.54735
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.43	(BLEU-1: 10.77,	BLEU-2: 3.31,	BLEU-3: 1.24,	BLEU-4: 0.43)
+	CHRF 17.97	ROUGE 9.63
+2024-02-23 06:41:47,044 Logging Recognition and Translation Outputs
+2024-02-23 06:41:47,044 ========================================================================================================================
+2024-02-23 06:41:47,044 Logging Sequence: 06August_2010_Friday_tagesschau-2172
+2024-02-23 06:41:47,045 	Gloss Reference :	JETZT WETTER WIE-AUSSEHEN MORGEN SAMSTAG SIEBTE AUGUST
+2024-02-23 06:41:47,046 	Gloss Hypothesis:	***** ****** ************ ****** ******* ****** ******
+2024-02-23 06:41:47,046 	Gloss Alignment :	D     D      D            D      D       D      D     
+2024-02-23 06:41:47,046 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:41:47,049 	Text Reference  :	und ** **** **** **** *** ******** ****** **** nun  die wettervorhersage für  morgen samstag den  siebten august
+2024-02-23 06:41:47,049 	Text Hypothesis :	und es wird auch noch ein bisschen kühler dazu gibt es  dann             auch noch   nicht   mehr so      kalt  
+2024-02-23 06:41:47,049 	Text Alignment  :	    I  I    I    I    I   I        I      I    S    S   S                S    S      S       S    S       S     
+2024-02-23 06:41:47,049 ========================================================================================================================
+2024-02-23 06:41:47,049 Logging Sequence: 07October_2012_Sunday_tagesschau-3026
+2024-02-23 06:41:47,050 	Gloss Reference :	TAG KLAR STERN SEHEN KOENNEN FROST
+2024-02-23 06:41:47,050 	Gloss Hypothesis:	*** **** ***** ***** ******* *****
+2024-02-23 06:41:47,050 	Gloss Alignment :	D   D    D     D     D       D    
+2024-02-23 06:41:47,050 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:41:47,051 	Text Reference  :	in der teilweise klaren nacht gibt es   örtlich leichten frost 
+2024-02-23 06:41:47,051 	Text Hypothesis :	** *** und       es     wird  auch noch ein     bisschen kühler
+2024-02-23 06:41:47,051 	Text Alignment  :	D  D   S         S      S     S    S    S       S        S     
+2024-02-23 06:41:47,052 ========================================================================================================================
+2024-02-23 06:41:47,052 Logging Sequence: 20December_2010_Monday_tagesschau-3199
+2024-02-23 06:41:47,052 	Gloss Reference :	NORD KALT KOMMEN ZONE DAZWISCHEN
+2024-02-23 06:41:47,052 	Gloss Hypothesis:	**** **** ****** **** **********
+2024-02-23 06:41:47,052 	Gloss Alignment :	D    D    D      D    D         
+2024-02-23 06:41:47,052 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:41:47,058 	Text Reference  :	*** ** **** **** sie  trennt kalte    luft   nördlich davon von milderer luft weiter südlich
+2024-02-23 06:41:47,058 	Text Hypothesis :	und es wird auch noch ein    bisschen kühler dazu     gibt  es  dann     auch noch   schauer
+2024-02-23 06:41:47,059 	Text Alignment  :	I   I  I    I    S    S      S        S      S        S     S   S        S    S      S      
+2024-02-23 06:41:47,059 ========================================================================================================================
+2024-02-23 06:41:47,059 Logging Sequence: 29July_2010_Thursday_tagesschau-7411
+2024-02-23 06:41:47,059 	Gloss Reference :	A HOCH KOMMEN SAMSTAG SONNTAG MEHR SONNE TEMPERATUR STEIGEN
+2024-02-23 06:41:47,059 	Gloss Hypothesis:	* **** ****** ******* ******* **** ***** ********** *******
+2024-02-23 06:41:47,059 	Gloss Alignment :	D D    D      D       D       D    D     D          D      
+2024-02-23 06:41:47,059 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:41:47,063 	Text Reference  :	das azorenhoch schickt uns  einen ableger der      zumindest am   wochenende für mehr sonne und    steigende    temperaturen sorgt   
+2024-02-23 06:41:47,064 	Text Hypothesis :	und es         wird    auch noch  ein     bisschen kühler    dazu gibt       es  dann nur   wenige regenschauer und          gewitter
+2024-02-23 06:41:47,064 	Text Alignment  :	S   S          S       S    S     S       S        S         S    S          S   S    S     S      S            S            S       
+2024-02-23 06:41:47,064 ========================================================================================================================
+2024-02-23 06:41:47,064 Logging Sequence: 09May_2011_Monday_tagesschau-8583
+2024-02-23 06:41:47,064 	Gloss Reference :	MORGEN ZWANZIG GRAD NORD BIS ACHT ZWANZIG REGION
+2024-02-23 06:41:47,065 	Gloss Hypothesis:	****** ******* **** **** *** **** ******* ******
+2024-02-23 06:41:47,065 	Gloss Alignment :	D      D       D    D    D   D    D       D     
+2024-02-23 06:41:47,065 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:41:47,067 	Text Reference  :	*** ** **** morgen werte von zwanzig  grad   an   der  küste bis  achtundzwanzig am   oberrhein
+2024-02-23 06:41:47,068 	Text Hypothesis :	und es wird auch   noch  ein bisschen kühler dazu gibt es    dann auch           noch kälter   
+2024-02-23 06:41:47,068 	Text Alignment  :	I   I  I    S      S     S   S        S      S    S    S     S    S              S    S        
+2024-02-23 06:41:47,068 ========================================================================================================================
+2024-02-23 06:44:17,858 Epoch   8: Total Training Recognition Loss 1018.63  Total Training Translation Loss 7412.59 
+2024-02-23 06:44:17,860 EPOCH 9
+2024-02-23 06:45:05,343 [Epoch: 009 Step: 00001800] Batch Recognition Loss:   3.950397 => Gls Tokens per Sec:      118 || Batch Translation Loss:  23.105324 => Txt Tokens per Sec:      229 || Lr: 0.000700
+2024-02-23 06:47:25,462 Validation result at epoch   9, step     1800: duration: 140.1171s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 105.33109	Translation Loss: 25254.37891	PPL: 31.22190
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.60	(BLEU-1: 10.11,	BLEU-2: 2.42,	BLEU-3: 1.04,	BLEU-4: 0.60)
+	CHRF 19.73	ROUGE 8.84
+2024-02-23 06:47:25,464 Logging Recognition and Translation Outputs
+2024-02-23 06:47:25,465 ========================================================================================================================
+2024-02-23 06:47:25,465 Logging Sequence: 11August_2010_Wednesday_tagesschau-8
+2024-02-23 06:47:25,465 	Gloss Reference :	WIND MAESSIG SCHWACH REGION WENN GEWITTER WIND KOENNEN
+2024-02-23 06:47:25,465 	Gloss Hypothesis:	**** ******* ******* ****** **** ******** **** *******
+2024-02-23 06:47:25,466 	Gloss Alignment :	D    D       D       D      D    D        D    D      
+2024-02-23 06:47:25,466 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:47:25,473 	Text Reference  :	meist weht nur ein      schwacher wind   aus  unterschiedlichen richtungen der  bei schauern und  gewittern stark böig sein kann  
+2024-02-23 06:47:25,474 	Text Hypothesis :	***** und  die nächsten tage      werden dann auch              nicht      ganz so  kalt     also es        wird  dann auch frisch
+2024-02-23 06:47:25,474 	Text Alignment  :	D     S    S   S        S         S      S    S                 S          S    S   S        S    S         S     S    S    S     
+2024-02-23 06:47:25,474 ========================================================================================================================
+2024-02-23 06:47:25,474 Logging Sequence: 25October_2010_Monday_tagesschau-22
+2024-02-23 06:47:25,475 	Gloss Reference :	MITTWOCH REGEN KOENNEN NORDWEST WAHRSCHEINLICH NORD STARK WIND
+2024-02-23 06:47:25,475 	Gloss Hypothesis:	******** ***** ******* ******** ************** **** ***** ****
+2024-02-23 06:47:25,475 	Gloss Alignment :	D        D     D       D        D              D    D     D   
+2024-02-23 06:47:25,475 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:47:25,480 	Text Reference  :	*** *** ******** **** ******* **** am   mittwoch hier   und da nieselregen in *** der      nordwesthälfte an   den küsten kräftiger wind  
+2024-02-23 06:47:25,480 	Text Hypothesis :	und die nächsten tage bringen dann auch den      westen und ** auch        in den nächsten tagen          wird es  dann   auch      kälter
+2024-02-23 06:47:25,480 	Text Alignment  :	I   I   I        I    I       I    S    S        S          D  S              I   S        S              S    S   S      S         S     
+2024-02-23 06:47:25,480 ========================================================================================================================
+2024-02-23 06:47:25,480 Logging Sequence: 04December_2009_Friday_tagesschau-841
+2024-02-23 06:47:25,481 	Gloss Reference :	MANCHMAL SCHWACH MAESSIG IX WIND IX WEST STARK WIND
+2024-02-23 06:47:25,481 	Gloss Hypothesis:	******** ******* ******* ** **** ** **** ***** ****
+2024-02-23 06:47:25,481 	Gloss Alignment :	D        D       D       D  D    D  D    D     D   
+2024-02-23 06:47:25,481 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:47:25,486 	Text Reference  :	*** *** ******** im   südosten schwacher sonst mäßiger bis      frischer südwind im   westen und nordwesten starke bis stürmische böen 
+2024-02-23 06:47:25,486 	Text Hypothesis :	und die nächsten tage bringen  dann      auch  keine   änderung kein     regen   kein wind   und auch       in     den nächsten   tagen
+2024-02-23 06:47:25,486 	Text Alignment  :	I   I   I        S    S        S         S     S       S        S        S       S    S          S          S      S   S          S    
+2024-02-23 06:47:25,486 ========================================================================================================================
+2024-02-23 06:47:25,487 Logging Sequence: 20October_2009_Tuesday_tagesschau-3595
+2024-02-23 06:47:25,487 	Gloss Reference :	WIND WEHEN MAESSIG WEHEN
+2024-02-23 06:47:25,487 	Gloss Hypothesis:	**** ***** ******* *****
+2024-02-23 06:47:25,487 	Gloss Alignment :	D    D     D       D    
+2024-02-23 06:47:25,487 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:47:25,489 	Text Reference  :	der wind aus      ost  weht   mäßig im   nordosten zum  teil frisch
+2024-02-23 06:47:25,489 	Text Hypothesis :	und die  nächsten tage werden dann  auch nicht     ganz so   kalt  
+2024-02-23 06:47:25,489 	Text Alignment  :	S   S    S        S    S      S     S    S         S    S    S     
+2024-02-23 06:47:25,489 ========================================================================================================================
+2024-02-23 06:47:25,489 Logging Sequence: 05December_2009_Saturday_tagesschau-4701
+2024-02-23 06:47:25,489 	Gloss Reference :	IX AUCH WIND DABEI TEMPERATUR FUENF BIS UNGEFAEHR DREIZEHN GRAD REGION
+2024-02-23 06:47:25,489 	Gloss Hypothesis:	** **** **** ***** ********** ***** *** ********* ******** **** ******
+2024-02-23 06:47:25,489 	Gloss Alignment :	D  D    D    D     D          D     D   D         D        D    D     
+2024-02-23 06:47:25,490 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:47:25,498 	Text Reference  :	*** *** ******** dort wird   es   auch ***** **** ** windig seien die **** **** höchsten temperaturen bewegen sich     zwischen fünf grad in vorpommern und  dreizehn grad im breisgau
+2024-02-23 06:47:25,498 	Text Hypothesis :	und die nächsten tage werden dann auch nicht ganz so kalt   also  die luft dann auch     in           den     nächsten tagen    dann wird es dann       auch nicht    ganz so kalt    
+2024-02-23 06:47:25,498 	Text Alignment  :	I   I   I        S    S      S         I     I    I  S      S         I    I    S        S            S       S        S        S    S    S  S          S    S        S    S  S       
+2024-02-23 06:47:25,498 ========================================================================================================================
+2024-02-23 06:50:27,163 [Epoch: 009 Step: 00001900] Batch Recognition Loss:   4.527687 => Gls Tokens per Sec:      139 || Batch Translation Loss:  17.542709 => Txt Tokens per Sec:      266 || Lr: 0.000700
+2024-02-23 06:52:43,134 Validation result at epoch   9, step     1900: duration: 135.9700s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 104.21381	Translation Loss: 25237.81055	PPL: 31.15150
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.40	(BLEU-1: 11.18,	BLEU-2: 2.75,	BLEU-3: 0.93,	BLEU-4: 0.40)
+	CHRF 20.26	ROUGE 9.78
+2024-02-23 06:52:43,137 Logging Recognition and Translation Outputs
+2024-02-23 06:52:43,137 ========================================================================================================================
+2024-02-23 06:52:43,138 Logging Sequence: 03July_2011_Sunday_tagesschau-1673
+2024-02-23 06:52:43,139 	Gloss Reference :	MITTWOCH WECHSELHAFT
+2024-02-23 06:52:43,139 	Gloss Hypothesis:	******** ***********
+2024-02-23 06:52:43,139 	Gloss Alignment :	D        D          
+2024-02-23 06:52:43,139 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:52:43,140 	Text Reference  :	*** *** ************ **** **** **** am mittwoch unbeständiges wetter
+2024-02-23 06:52:43,140 	Text Hypothesis :	und die temperaturen dann auch noch in den      nächsten      tagen 
+2024-02-23 06:52:43,140 	Text Alignment  :	I   I   I            I    I    I    S  S        S             S     
+2024-02-23 06:52:43,140 ========================================================================================================================
+2024-02-23 06:52:43,140 Logging Sequence: 13April_2011_Wednesday_tagesschau-1683
+2024-02-23 06:52:43,141 	Gloss Reference :	REST REGION SONNE WOLKE NUR ORT BISSCHEN REGEN
+2024-02-23 06:52:43,141 	Gloss Hypothesis:	**** ****** ***** ***** *** *** ******** *****
+2024-02-23 06:52:43,141 	Gloss Alignment :	D    D      D     D     D   D   D        D    
+2024-02-23 06:52:43,141 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:52:43,143 	Text Reference  :	*** ** im   übrigen land mal  sonne    mal    wolken und      nur    vereinzelte schauer
+2024-02-23 06:52:43,143 	Text Hypothesis :	und so wird es      dann auch tagsüber wieder ein    bisschen kühler sein        kann   
+2024-02-23 06:52:43,143 	Text Alignment  :	I   I  S    S       S    S    S        S      S      S        S      S           S      
+2024-02-23 06:52:43,143 ========================================================================================================================
+2024-02-23 06:52:43,143 Logging Sequence: 22January_2011_Saturday_tagesschau-2080
+2024-02-23 06:52:43,144 	Gloss Reference :	WIND SCHWACH WEHEN
+2024-02-23 06:52:43,144 	Gloss Hypothesis:	**** ******* *****
+2024-02-23 06:52:43,144 	Gloss Alignment :	D    D       D    
+2024-02-23 06:52:43,144 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:52:43,162 	Text Reference  :	es weht meist ein          schwacher wind aus  nördlichen bis westlichen richtungen
+2024-02-23 06:52:43,164 	Text Hypothesis :	** und  die   temperaturen dann      auch noch in         den nächsten   tagen     
+2024-02-23 06:52:43,165 	Text Alignment  :	D  S    S     S            S         S    S    S          S   S          S         
+2024-02-23 06:52:43,171 ========================================================================================================================
+2024-02-23 06:52:43,171 Logging Sequence: 18September_2010_Saturday_tagesschau-4197
+2024-02-23 06:52:43,173 	Gloss Reference :	MITTWOCH ALLE GUT SONNE SCHOEN SECHSZEHN BIS FUENF ZWANZIG GRAD
+2024-02-23 06:52:43,174 	Gloss Hypothesis:	******** **** *** ***** ****** ********* *** ***** ******* ****
+2024-02-23 06:52:43,174 	Gloss Alignment :	D        D    D   D     D      D         D   D     D       D   
+2024-02-23 06:52:43,174 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:52:43,178 	Text Reference  :	*** *** am           mittwoch dann überall freundliches hochdruckwetter bei sechzehn bis fünfundzwanzig grad 
+2024-02-23 06:52:43,178 	Text Hypothesis :	und die temperaturen sinken   auf  den     straßen      ist             es  in       den nächsten       tagen
+2024-02-23 06:52:43,178 	Text Alignment  :	I   I   S            S        S    S       S            S               S   S        S   S              S    
+2024-02-23 06:52:43,178 ========================================================================================================================
+2024-02-23 06:52:43,178 Logging Sequence: 25August_2009_Tuesday_tagesschau-7091
+2024-02-23 06:52:43,179 	Gloss Reference :	MORGEN SCHWACH MAESSIG ZEIGEN-BILDSCHIRM WIND
+2024-02-23 06:52:43,179 	Gloss Hypothesis:	****** ******* ******* ***************** ****
+2024-02-23 06:52:43,179 	Gloss Alignment :	D      D       D       D                 D   
+2024-02-23 06:52:43,179 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:52:43,181 	Text Reference  :	morgen meist schwacher bis                  mäßiger wind        aus  südwest bis *** west 
+2024-02-23 06:52:43,182 	Text Hypothesis :	****** und   die       temperaturgegensätze die     verschärfen sich noch    bis zum abend
+2024-02-23 06:52:43,182 	Text Alignment  :	D      S     S         S                    S       S           S    S           I   S    
+2024-02-23 06:52:43,182 ========================================================================================================================
+2024-02-23 06:55:58,662 Epoch   9: Total Training Recognition Loss 988.10  Total Training Translation Loss 6836.67 
+2024-02-23 06:55:58,663 EPOCH 10
+2024-02-23 06:56:02,758 [Epoch: 010 Step: 00002000] Batch Recognition Loss:   4.394566 => Gls Tokens per Sec:      123 || Batch Translation Loss:  39.662075 => Txt Tokens per Sec:      237 || Lr: 0.000700
+2024-02-23 06:58:30,804 Validation result at epoch  10, step     2000: duration: 148.0428s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 105.06141	Translation Loss: 25804.82422	PPL: 33.65369
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.63	(BLEU-1: 13.03,	BLEU-2: 4.27,	BLEU-3: 1.61,	BLEU-4: 0.63)
+	CHRF 17.56	ROUGE 10.49
+2024-02-23 06:58:30,806 Logging Recognition and Translation Outputs
+2024-02-23 06:58:30,807 ========================================================================================================================
+2024-02-23 06:58:30,807 Logging Sequence: 13April_2011_Wednesday_tagesschau-1683
+2024-02-23 06:58:30,808 	Gloss Reference :	REST REGION SONNE WOLKE NUR ORT BISSCHEN REGEN
+2024-02-23 06:58:30,808 	Gloss Hypothesis:	**** ****** ***** ***** *** *** ******** *****
+2024-02-23 06:58:30,808 	Gloss Alignment :	D    D      D     D     D   D   D        D    
+2024-02-23 06:58:30,808 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:58:30,811 	Text Reference  :	*** ** im   übrigen land mal    sonne mal   wolken und **** nur vereinzelte schauer
+2024-02-23 06:58:30,812 	Text Hypothesis :	und es wird auch    noch wärmer als   heute nacht  und auch der wind        wird   
+2024-02-23 06:58:30,812 	Text Alignment  :	I   I  S    S       S    S      S     S     S          I    S   S           S      
+2024-02-23 06:58:30,812 ========================================================================================================================
+2024-02-23 06:58:30,812 Logging Sequence: 14April_2010_Wednesday_heute-1881
+2024-02-23 06:58:30,812 	Gloss Reference :	WOHER WARM
+2024-02-23 06:58:30,812 	Gloss Hypothesis:	***** ****
+2024-02-23 06:58:30,812 	Gloss Alignment :	D     D   
+2024-02-23 06:58:30,812 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:58:30,813 	Text Reference  :	woher soll die wärme derzeit auch **** kommen
+2024-02-23 06:58:30,813 	Text Hypothesis :	***** **** *** es    wird    auch noch heißer
+2024-02-23 06:58:30,813 	Text Alignment  :	D     D    D   S     S            I    S     
+2024-02-23 06:58:30,813 ========================================================================================================================
+2024-02-23 06:58:30,813 Logging Sequence: 27August_2009_Thursday_tagesschau-3286
+2024-02-23 06:58:30,814 	Gloss Reference :	MONTAG AEHNLICH WETTER ABER BISSCHEN MEHR WARM
+2024-02-23 06:58:30,814 	Gloss Hypothesis:	****** ******** ****** **** ******** **** ****
+2024-02-23 06:58:30,814 	Gloss Alignment :	D      D        D      D    D        D    D   
+2024-02-23 06:58:30,814 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:58:30,814 	Text Reference  :	am montag ähnliches wetter aber wieder deutlich wärmer
+2024-02-23 06:58:30,814 	Text Hypothesis :	** ****** ********* es     wird auch   noch     heißer
+2024-02-23 06:58:30,815 	Text Alignment  :	D  D      D         S      S    S      S        S     
+2024-02-23 06:58:30,815 ========================================================================================================================
+2024-02-23 06:58:30,815 Logging Sequence: 20October_2009_Tuesday_tagesschau-3594
+2024-02-23 06:58:30,815 	Gloss Reference :	ABEND FLUSS WEST REGION MOEGLICH REGEN
+2024-02-23 06:58:30,815 	Gloss Hypothesis:	***** ***** **** ****** ******** *****
+2024-02-23 06:58:30,815 	Gloss Alignment :	D     D     D    D      D        D    
+2024-02-23 06:58:30,815 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:58:30,816 	Text Reference  :	gegen abend kann es westlich des  rheins leicht regnen
+2024-02-23 06:58:30,816 	Text Hypothesis :	***** ***** und  es ******** wird auch   noch   heißer
+2024-02-23 06:58:30,816 	Text Alignment  :	D     D     S       D        S    S      S      S     
+2024-02-23 06:58:30,816 ========================================================================================================================
+2024-02-23 06:58:30,816 Logging Sequence: 07April_2010_Wednesday_tagesschau-6029
+2024-02-23 06:58:30,816 	Gloss Reference :	REGION SUEDOST SONNE NORDWEST UEBERWIEGEND WOLKE IX REGEN SUEDOST AUCH SCHAUER
+2024-02-23 06:58:30,816 	Gloss Hypothesis:	****** ******* ***** ******** ************ ***** ** ***** ******* **** *******
+2024-02-23 06:58:30,817 	Gloss Alignment :	D      D       D     D        D            D     D  D     D       D    D      
+2024-02-23 06:58:30,817 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 06:58:30,821 	Text Reference  :	im osten und südosten scheint morgen verbreitet die sonne in der nordwesthälfte dagegen viele wolken und  stellenweise etwas regen richtung süden auch ** ein paar     schauer
+2024-02-23 06:58:30,822 	Text Hypothesis :	** ***** und ******** ******* ****** ********** *** ***** ** *** ************** ******* es    wird   auch noch         sehr  glatt werden   aber  auch in den nächsten tagen  
+2024-02-23 06:58:30,822 	Text Alignment  :	D  D         D        D       D      D          D   D     D  D   D              D       S     S      S    S            S     S     S        S          I  S   S        S      
+2024-02-23 06:58:30,822 ========================================================================================================================
+2024-02-23 07:01:40,691 [Epoch: 010 Step: 00002100] Batch Recognition Loss:   4.240413 => Gls Tokens per Sec:      132 || Batch Translation Loss:  31.357971 => Txt Tokens per Sec:      254 || Lr: 0.000700
+2024-02-23 07:04:10,671 Validation result at epoch  10, step     2100: duration: 149.9776s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 112.42986	Translation Loss: 26205.94141	PPL: 35.54424
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.54	(BLEU-1: 10.01,	BLEU-2: 2.45,	BLEU-3: 0.99,	BLEU-4: 0.54)
+	CHRF 19.09	ROUGE 8.16
+2024-02-23 07:04:10,676 Logging Recognition and Translation Outputs
+2024-02-23 07:04:10,676 ========================================================================================================================
+2024-02-23 07:04:10,677 Logging Sequence: 21October_2009_Wednesday_tagesschau-735
+2024-02-23 07:04:10,678 	Gloss Reference :	FRANKREICH KOMMEN WOLKE OST NIEDERSACHSEN BAYERN SUEDWEST REGEN
+2024-02-23 07:04:10,679 	Gloss Hypothesis:	********** ****** ***** *** ************* ****** ******** *****
+2024-02-23 07:04:10,679 	Gloss Alignment :	D          D      D     D   D             D      D        D    
+2024-02-23 07:04:10,679 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:04:10,682 	Text Reference  :	von frankreich breiten sich heute nacht dichte wolken ostwärts bis nach niedersachsen und *** bayern aus  im    westen und       südwesten fällt        regen    
+2024-02-23 07:04:10,683 	Text Hypothesis :	*** ********** ******* **** ***** ***** ****** ****** ******** *** **** ************* und das wird   auch schon fast   pünktlich zum       herbstanfang umstellen
+2024-02-23 07:04:10,683 	Text Alignment  :	D   D          D       D    D     D     D      D      D        D   D    D                 I   S      S    S     S      S         S         S            S        
+2024-02-23 07:04:10,683 ========================================================================================================================
+2024-02-23 07:04:10,683 Logging Sequence: 30December_2010_Thursday_tagesschau-2236
+2024-02-23 07:04:10,683 	Gloss Reference :	HEUTE NACHT IX REGION NULL GRAD WENN STERN KOENNEN SEHEN BIS MINUS ZWEI ZWANZIG GRAD
+2024-02-23 07:04:10,683 	Gloss Hypothesis:	***** ***** ** ****** **** **** **** ***** ******* ***** *** ***** **** ******* ****
+2024-02-23 07:04:10,683 	Gloss Alignment :	D     D     D  D      D    D    D    D     D       D     D   D     D    D       D   
+2024-02-23 07:04:10,683 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:04:10,688 	Text Reference  :	*** *** **** **** heute nacht null    grad         am  hochrhein wo   es **** ******** ****** **** *** *** **** **** aufklart bis  minus zweiundzwanzig grad     
+2024-02-23 07:04:10,689 	Text Hypothesis :	und das wird dann auch  sehr  schnell weiterziehen und dann      wird es dann deutlich kühler sein mit der wind weht der      wind auch  mit            gewittern
+2024-02-23 07:04:10,689 	Text Alignment  :	I   I   I    I    S     S     S       S            S   S         S       I    I        I      I    I   I   I    I    S        S    S     S              S        
+2024-02-23 07:04:10,689 ========================================================================================================================
+2024-02-23 07:04:10,689 Logging Sequence: 05September_2009_Saturday_tagesschau-4078
+2024-02-23 07:04:10,689 	Gloss Reference :	WETTER WIE-AUSSEHEN MORGEN SONNTAG SECHS SEPTEMBER
+2024-02-23 07:04:10,690 	Gloss Hypothesis:	****** ************ ****** ******* ***** *********
+2024-02-23 07:04:10,690 	Gloss Alignment :	D      D            D      D       D     D        
+2024-02-23 07:04:10,691 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:04:10,693 	Text Reference  :	und *** **** **** ***** **** nun     die      wettervorhersage für    morgen sonntag     den sechsten september
+2024-02-23 07:04:10,693 	Text Hypothesis :	und das wird auch schon fast überall deutlich kühler           bleibt es     wechselhaft und auch     kühler   
+2024-02-23 07:04:10,693 	Text Alignment  :	    I   I    I    I     I    S       S        S                S      S      S           S   S        S        
+2024-02-23 07:04:10,694 ========================================================================================================================
+2024-02-23 07:04:10,694 Logging Sequence: 13May_2010_Thursday_tagesschau-7916
+2024-02-23 07:04:10,694 	Gloss Reference :	JETZT WETTER MORGEN FREITAG VIERZEHN MAI
+2024-02-23 07:04:10,694 	Gloss Hypothesis:	***** ****** ****** ******* ******** ***
+2024-02-23 07:04:10,694 	Gloss Alignment :	D     D      D      D       D        D  
+2024-02-23 07:04:10,695 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:04:10,696 	Text Reference  :	und nun die  wettervorhersage für   morgen freitag   den vierzehnten  mai      
+2024-02-23 07:04:10,697 	Text Hypothesis :	und das wird auch             schon fast   pünktlich zum herbstanfang umstellen
+2024-02-23 07:04:10,697 	Text Alignment  :	    S   S    S                S     S      S         S   S            S        
+2024-02-23 07:04:10,697 ========================================================================================================================
+2024-02-23 07:04:10,697 Logging Sequence: 20October_2010_Wednesday_heute-8501
+2024-02-23 07:04:10,697 	Gloss Reference :	IX SUED DANN RUHIG MEHR TROCKEN AUCH BISSCHEN SONNE
+2024-02-23 07:04:10,697 	Gloss Hypothesis:	** **** **** ***** **** ******* **** ******** *****
+2024-02-23 07:04:10,698 	Gloss Alignment :	D  D    D    D     D    D       D    D        D    
+2024-02-23 07:04:10,698 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:04:10,702 	Text Reference  :	aber nach süden hin  beruhigt sich das  ganze   es     wird trockener und   vor  allen dingen auch mal wieder  sonniger
+2024-02-23 07:04:10,702 	Text Hypothesis :	**** und  das   wird dann     auch sehr schnell kälter als  heute     nacht wird es    dann   auch *** frostig kalt    
+2024-02-23 07:04:10,702 	Text Alignment  :	D    S    S     S    S        S    S    S       S      S    S         S     S    S     S           D   S       S       
+2024-02-23 07:04:10,702 ========================================================================================================================
+2024-02-23 07:07:13,671 [Epoch: 010 Step: 00002200] Batch Recognition Loss:   4.469216 => Gls Tokens per Sec:      134 || Batch Translation Loss:  20.365574 => Txt Tokens per Sec:      259 || Lr: 0.000700
+2024-02-23 07:09:27,358 Validation result at epoch  10, step     2200: duration: 133.6842s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 109.45551	Translation Loss: 26684.96875	PPL: 37.94165
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.48	(BLEU-1: 12.50,	BLEU-2: 3.90,	BLEU-3: 1.41,	BLEU-4: 0.48)
+	CHRF 18.62	ROUGE 10.12
+2024-02-23 07:09:27,360 Logging Recognition and Translation Outputs
+2024-02-23 07:09:27,361 ========================================================================================================================
+2024-02-23 07:09:27,361 Logging Sequence: 01March_2011_Tuesday_tagesschau-2209
+2024-02-23 07:09:27,361 	Gloss Reference :	MORGEN MEISTENS SONNE
+2024-02-23 07:09:27,361 	Gloss Hypothesis:	****** ******** *****
+2024-02-23 07:09:27,361 	Gloss Alignment :	D      D        D    
+2024-02-23 07:09:27,362 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:09:27,362 	Text Reference  :	*** ** **** ***** morgen     scheint verbreitet die      sonne
+2024-02-23 07:09:27,363 	Text Hypothesis :	und es wird jetzt herbstlich mit     den        nächsten tagen
+2024-02-23 07:09:27,363 	Text Alignment  :	I   I  I    I     S          S       S          S        S    
+2024-02-23 07:09:27,363 ========================================================================================================================
+2024-02-23 07:09:27,363 Logging Sequence: 07January_2010_Thursday_tagesschau-2301
+2024-02-23 07:09:27,363 	Gloss Reference :	HEUTE NACHT TEMPERATUR MINUS DREI MINUS SIEBZEHN WENN KLAR TIEF
+2024-02-23 07:09:27,363 	Gloss Hypothesis:	***** ***** ********** ***** **** ***** ******** **** **** ****
+2024-02-23 07:09:27,363 	Gloss Alignment :	D     D     D          D     D    D     D        D    D    D   
+2024-02-23 07:09:27,363 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:09:27,370 	Text Reference  :	*** ** **** ****** **** *** ***** ** **** heute nacht       temperaturen zwischen minus    drei  und minus siebzehn grad wo   es länger aufklart werte darunter
+2024-02-23 07:09:27,370 	Text Hypothesis :	und es wird kühler sein das heißt es gibt ihn   tatsächlich auch         noch     leichten frost bis minus sieben   grad sind es ****** ******** null  grad    
+2024-02-23 07:09:27,370 	Text Alignment  :	I   I  I    I      I    I   I     I  I    S     S           S            S        S        S     S         S             S       D      D        S     S       
+2024-02-23 07:09:27,370 ========================================================================================================================
+2024-02-23 07:09:27,370 Logging Sequence: 23August_2010_Monday_heute-5319
+2024-02-23 07:09:27,371 	Gloss Reference :	FRISCH MORGEN ANGENEHM DEUTSCH LAND
+2024-02-23 07:09:27,371 	Gloss Hypothesis:	****** ****** ******** ******* ****
+2024-02-23 07:09:27,371 	Gloss Alignment :	D      D      D        D       D   
+2024-02-23 07:09:27,371 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:09:27,373 	Text Reference  :	und was folgte ist so eine bisschen frische luft ganz angenehm morgen für  den  größten teil deutschlands
+2024-02-23 07:09:27,373 	Text Hypothesis :	und *** ****** *** ** **** ******** ******* **** es   wird     dann   auch noch wärmer  als  heute       
+2024-02-23 07:09:27,373 	Text Alignment  :	    D   D      D   D  D    D        D       D    S    S        S      S    S    S       S    S           
+2024-02-23 07:09:27,373 ========================================================================================================================
+2024-02-23 07:09:27,373 Logging Sequence: 10August_2011_Wednesday_tagesschau-6304
+2024-02-23 07:09:27,373 	Gloss Reference :	SUED MEHR FREUNDLICH IX NORD NICHT ORT AUCH SCHAUER GEWITTER KURZ
+2024-02-23 07:09:27,373 	Gloss Hypothesis:	**** **** ********** ** **** ***** *** **** ******* ******** ****
+2024-02-23 07:09:27,373 	Gloss Alignment :	D    D    D          D  D    D     D   D    D       D        D   
+2024-02-23 07:09:27,374 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:09:27,379 	Text Reference  :	*** ** **** **** **** **** **** **** ***** im  süden        bleibt es  freundlicher als richtung norden gebietsweise gibt es ** ****** *** auch schauer oder kurze gewitter
+2024-02-23 07:09:27,379 	Text Hypothesis :	und es wird auch noch sehr mild dazu kommt die temperaturen sinken die temperaturen auf minus    zwei   grad         sind es im westen und auch ******* kein frost werden  
+2024-02-23 07:09:27,380 	Text Alignment  :	I   I  I    I    I    I    I    I    I     S   S            S      S   S            S   S        S      S            S       I  I      I        D       S    S     S       
+2024-02-23 07:09:27,380 ========================================================================================================================
+2024-02-23 07:09:27,380 Logging Sequence: 28May_2010_Friday_tagesschau-7496
+2024-02-23 07:09:27,380 	Gloss Reference :	HOCH KOMMEN OST KOMMEN ES-BEDEUTET MORGEN FREUNDLICH WETTER
+2024-02-23 07:09:27,380 	Gloss Hypothesis:	**** ****** *** ****** *********** ****** ********** ******
+2024-02-23 07:09:27,380 	Gloss Alignment :	D    D      D   D      D           D      D          D     
+2024-02-23 07:09:27,380 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:09:27,386 	Text Reference  :	*** ** **** das  hoch über den    azoren dehnt sich  über mitteleuropa nach   osten aus und sorgt      morgen kurzzeitig für     meist freundliches wetter   
+2024-02-23 07:09:27,387 	Text Hypothesis :	und es wird dann auch noch wärmer als    heute nacht auch im           westen sind  es  nur vereinzelt ein    paar       schauer oder  gewitter     unterwegs
+2024-02-23 07:09:27,387 	Text Alignment  :	I   I  I    S    S    S    S      S      S     S     S    S            S      S     S   S   S          S      S          S       S     S            S        
+2024-02-23 07:09:27,387 ========================================================================================================================
+2024-02-23 07:10:05,223 Epoch  10: Total Training Recognition Loss 966.01  Total Training Translation Loss 6504.58 
+2024-02-23 07:10:05,248 EPOCH 11
+2024-02-23 07:12:36,293 [Epoch: 011 Step: 00002300] Batch Recognition Loss:   4.530558 => Gls Tokens per Sec:      133 || Batch Translation Loss:  18.406246 => Txt Tokens per Sec:      255 || Lr: 0.000700
+2024-02-23 07:14:57,802 Validation result at epoch  11, step     2300: duration: 141.5071s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 108.92590	Translation Loss: 26086.00977	PPL: 34.96811
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.26	(BLEU-1: 9.44,	BLEU-2: 1.90,	BLEU-3: 0.63,	BLEU-4: 0.26)
+	CHRF 19.51	ROUGE 7.68
+2024-02-23 07:14:57,805 Logging Recognition and Translation Outputs
+2024-02-23 07:14:57,806 ========================================================================================================================
+2024-02-23 07:14:57,806 Logging Sequence: 30January_2013_Wednesday_tagesschau-475
+2024-02-23 07:14:57,807 	Gloss Reference :	FREITAG DANN KOMMEN REGEN IX UEBERWIEGEND WIND
+2024-02-23 07:14:57,807 	Gloss Hypothesis:	******* **** ****** ***** ** ************ ****
+2024-02-23 07:14:57,807 	Gloss Alignment :	D       D    D      D     D  D            D   
+2024-02-23 07:14:57,807 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:14:57,811 	Text Reference  :	am freitag kommen von  westen neue    regenfälle auf   dabei ist       es   teilweise windig 
+2024-02-23 07:14:57,811 	Text Hypothesis :	** ******* der    wind weht   schwach bis        mäßig bei   gewittern sind sturmböen möglich
+2024-02-23 07:14:57,811 	Text Alignment  :	D  D       S      S    S      S       S          S     S     S         S    S         S      
+2024-02-23 07:14:57,811 ========================================================================================================================
+2024-02-23 07:14:57,811 Logging Sequence: 21October_2009_Wednesday_tagesschau-735
+2024-02-23 07:14:57,812 	Gloss Reference :	FRANKREICH KOMMEN WOLKE OST NIEDERSACHSEN BAYERN SUEDWEST REGEN
+2024-02-23 07:14:57,812 	Gloss Hypothesis:	********** ****** ***** *** ************* ****** ******** *****
+2024-02-23 07:14:57,812 	Gloss Alignment :	D          D      D     D   D             D      D        D    
+2024-02-23 07:14:57,812 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:14:57,837 	Text Reference  :	von frankreich breiten sich heute nacht dichte wolken       ostwärts bis nach     niedersachsen und           bayern aus     im   westen und     südwesten fällt regen    
+2024-02-23 07:14:57,838 	Text Hypothesis :	*** ********** ******* und  diese hell  rot    eingefärbten gebiete  die beziehen sich          hauptsächlich auch   nochmal über der    nordsee auch      mit   gewittern
+2024-02-23 07:14:57,839 	Text Alignment  :	D   D          D       S    S     S     S      S            S        S   S        S             S             S      S       S    S      S       S         S     S        
+2024-02-23 07:14:57,839 ========================================================================================================================
+2024-02-23 07:14:57,839 Logging Sequence: 04December_2009_Friday_tagesschau-841
+2024-02-23 07:14:57,839 	Gloss Reference :	MANCHMAL SCHWACH MAESSIG IX WIND IX WEST STARK WIND
+2024-02-23 07:14:57,839 	Gloss Hypothesis:	******** ******* ******* ** **** ** **** ***** ****
+2024-02-23 07:14:57,839 	Gloss Alignment :	D        D       D       D  D    D  D    D     D   
+2024-02-23 07:14:57,839 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:14:57,859 	Text Reference  :	*** ***** im   südosten schwacher    sonst   mäßiger bis      frischer südwind       im   westen  und  nordwesten starke  bis  stürmische böen     
+2024-02-23 07:14:57,860 	Text Hypothesis :	und diese hell rot      eingefärbten gebiete die     beziehen sich     hauptsächlich auch nochmal über der        nordsee auch mit        gewittern
+2024-02-23 07:14:57,860 	Text Alignment  :	I   I     S    S        S            S       S       S        S        S             S    S       S    S          S       S    S          S        
+2024-02-23 07:14:57,860 ========================================================================================================================
+2024-02-23 07:14:57,860 Logging Sequence: 20September_2010_Monday_heute-2934
+2024-02-23 07:14:57,861 	Gloss Reference :	DABEI NORD MEHR MILD
+2024-02-23 07:14:57,861 	Gloss Hypothesis:	***** **** **** ****
+2024-02-23 07:14:57,861 	Gloss Alignment :	D     D    D    D   
+2024-02-23 07:14:57,861 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:14:57,862 	Text Reference  :	*** deutlich milder ist es   unter  den  wolken norddeutschlands
+2024-02-23 07:14:57,863 	Text Hypothesis :	und diese    luft   die auch weiter nach osten  voran           
+2024-02-23 07:14:57,863 	Text Alignment  :	I   S        S      S   S    S      S    S      S               
+2024-02-23 07:14:57,863 ========================================================================================================================
+2024-02-23 07:14:57,863 Logging Sequence: 04January_2010_Monday_heute-7401
+2024-02-23 07:14:57,864 	Gloss Reference :	REGION ANDERS MILD HINREICHEND HEUTE NACHT HINREICHEND SCHNEE
+2024-02-23 07:14:57,864 	Gloss Hypothesis:	****** ****** **** *********** ***** ***** *********** ******
+2024-02-23 07:14:57,864 	Gloss Alignment :	D      D      D    D           D     D     D           D     
+2024-02-23 07:14:57,864 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:14:57,868 	Text Reference  :	ganz anders an der nordsee da ist es milder und es bleibt auch in  dieser nacht dort   ziemlich mild  es   schneit nämlich   
+2024-02-23 07:14:57,868 	Text Hypothesis :	**** ****** ** *** ******* ** *** ** ****** und ** diese  luft die zu     uns   könnte sich     immer noch weiter  ausbreiten
+2024-02-23 07:14:57,869 	Text Alignment  :	D    D      D  D   D       D  D   D  D          D  S      S    S   S      S     S      S        S     S    S       S         
+2024-02-23 07:14:57,869 ========================================================================================================================
+2024-02-23 07:17:53,948 [Epoch: 011 Step: 00002400] Batch Recognition Loss:   3.915725 => Gls Tokens per Sec:      140 || Batch Translation Loss:  19.333973 => Txt Tokens per Sec:      269 || Lr: 0.000700
+2024-02-23 07:20:28,717 Validation result at epoch  11, step     2400: duration: 154.7663s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 110.25761	Translation Loss: 27217.08398	PPL: 40.79480
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.92	(BLEU-1: 9.94,	BLEU-2: 3.04,	BLEU-3: 1.47,	BLEU-4: 0.92)
+	CHRF 20.29	ROUGE 9.17
+2024-02-23 07:20:28,721 Logging Recognition and Translation Outputs
+2024-02-23 07:20:28,722 ========================================================================================================================
+2024-02-23 07:20:28,722 Logging Sequence: 12February_2010_Friday_tagesschau-125
+2024-02-23 07:20:28,723 	Gloss Reference :	MORGEN MAL SONNE SPEZIELL ALPEN
+2024-02-23 07:20:28,723 	Gloss Hypothesis:	****** *** ***** ******** *****
+2024-02-23 07:20:28,723 	Gloss Alignment :	D      D   D     D        D    
+2024-02-23 07:20:28,723 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:20:28,727 	Text Reference  :	am  tag nur  hier und  da   einige sonnige momente vor allem an   den  alpen 
+2024-02-23 07:20:28,727 	Text Hypothesis :	und das wird eben auch noch der    wind    weht    der wind  auch noch frisch
+2024-02-23 07:20:28,728 	Text Alignment  :	S   S   S    S    S    S    S      S       S       S   S     S    S    S     
+2024-02-23 07:20:28,728 ========================================================================================================================
+2024-02-23 07:20:28,728 Logging Sequence: 24April_2010_Saturday_tagesschau-3963
+2024-02-23 07:20:28,728 	Gloss Reference :	MORGEN AUCH HOCH LUFT VIEL SONNE
+2024-02-23 07:20:28,728 	Gloss Hypothesis:	****** **** **** **** **** *****
+2024-02-23 07:20:28,728 	Gloss Alignment :	D      D    D    D    D    D    
+2024-02-23 07:20:28,728 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:20:28,730 	Text Reference  :	*** *** **** **** auch **** ********** morgen beschert uns  hoher luftdruck viel sonnenschein
+2024-02-23 07:20:28,731 	Text Hypothesis :	und das wird eben auch noch verstärken denn   der      wind weht  auch      noch frisch      
+2024-02-23 07:20:28,731 	Text Alignment  :	I   I   I    I         I    I          S      S        S    S     S         S    S           
+2024-02-23 07:20:28,731 ========================================================================================================================
+2024-02-23 07:20:28,731 Logging Sequence: 18November_2009_Wednesday_tagesschau-5587
+2024-02-23 07:20:28,731 	Gloss Reference :	OST NACHT GEFAHR WIND
+2024-02-23 07:20:28,731 	Gloss Hypothesis:	*** ***** ****** ****
+2024-02-23 07:20:28,731 	Gloss Alignment :	D   D     D      D   
+2024-02-23 07:20:28,732 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:20:28,734 	Text Reference  :	*** bis in   die  nacht hinein an     der  ostsee gefahr von    orkanartigen böen   
+2024-02-23 07:20:28,734 	Text Hypothesis :	und das wird eben auch  noch   kälter sein aber   es     bleibt weitgehend   trocken
+2024-02-23 07:20:28,734 	Text Alignment  :	I   S   S    S    S     S      S      S    S      S      S      S            S      
+2024-02-23 07:20:28,735 ========================================================================================================================
+2024-02-23 07:20:28,735 Logging Sequence: 12December_2010_Sunday_tagesschau-5605
+2024-02-23 07:20:28,735 	Gloss Reference :	TAG VOGEL LAND MINUS ACHT NORD MINUS DREI GRAD
+2024-02-23 07:20:28,735 	Gloss Hypothesis:	*** ***** **** ***** **** **** ***** **** ****
+2024-02-23 07:20:28,735 	Gloss Alignment :	D   D     D    D     D    D    D     D    D   
+2024-02-23 07:20:28,735 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:20:28,738 	Text Reference  :	am  tag minus acht grad im   vogtland und  plus drei grad   an      der  nordsee
+2024-02-23 07:20:28,738 	Text Hypothesis :	und das wird  eben auch noch kälter   sein aber es   bleibt trocken aber trocken
+2024-02-23 07:20:28,738 	Text Alignment  :	S   S   S     S    S    S    S        S    S    S    S      S       S    S      
+2024-02-23 07:20:28,739 ========================================================================================================================
+2024-02-23 07:20:28,739 Logging Sequence: 10January_2011_Monday_tagesschau-6409
+2024-02-23 07:20:28,739 	Gloss Reference :	HEUTE-NACHT IX EINS GRAD MINUS SIEBEN REGION
+2024-02-23 07:20:28,739 	Gloss Hypothesis:	*********** ** **** **** ***** ****** ******
+2024-02-23 07:20:28,739 	Gloss Alignment :	D           D  D    D    D     D      D     
+2024-02-23 07:20:28,739 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:20:28,741 	Text Reference  :	heute nacht ein  grad im   süden und    minus sieben grad im     mittelgebirgsraum
+2024-02-23 07:20:28,742 	Text Hypothesis :	und   das   wird eben auch noch  kälter sein  aber   es   bleibt trocken          
+2024-02-23 07:20:28,742 	Text Alignment  :	S     S     S    S    S    S     S      S     S      S    S      S                
+2024-02-23 07:20:28,742 ========================================================================================================================
+2024-02-23 07:21:54,930 Epoch  11: Total Training Recognition Loss 944.46  Total Training Translation Loss 6166.85 
+2024-02-23 07:21:54,930 EPOCH 12
+2024-02-23 07:23:45,303 [Epoch: 012 Step: 00002500] Batch Recognition Loss:   4.235060 => Gls Tokens per Sec:      124 || Batch Translation Loss:  18.630524 => Txt Tokens per Sec:      239 || Lr: 0.000700
+2024-02-23 07:26:00,532 Validation result at epoch  12, step     2500: duration: 135.2264s
+	Recognition Beam Size: 1	Translation Beam Size: 1	Translation Beam Alpha: -1
+	Recognition Loss: 111.42534	Translation Loss: 26463.09180	PPL: 36.81175
+	Eval Metric: BLEU
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 0.84	(BLEU-1: 10.32,	BLEU-2: 2.95,	BLEU-3: 1.52,	BLEU-4: 0.84)
+	CHRF 16.45	ROUGE 9.48
+2024-02-23 07:26:00,535 Logging Recognition and Translation Outputs
+2024-02-23 07:26:00,536 ========================================================================================================================
+2024-02-23 07:26:00,536 Logging Sequence: 12February_2010_Friday_tagesschau-126
+2024-02-23 07:26:00,536 	Gloss Reference :	MAL BISSCHEN SCHNEE NORD MEHR STARK SCHNEE
+2024-02-23 07:26:00,536 	Gloss Hypothesis:	*** ******** ****** **** **** ***** ******
+2024-02-23 07:26:00,536 	Gloss Alignment :	D   D        D      D    D    D     D     
+2024-02-23 07:26:00,536 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:26:00,539 	Text Reference  :	gelegentlich schneit es   leicht richtung nordosten kann   es auch noch    kräftiger schneien
+2024-02-23 07:26:00,539 	Text Hypothesis :	und          der     wind weht   mäßig    bis       frisch an der  nordsee auch      frisch  
+2024-02-23 07:26:00,539 	Text Alignment  :	S            S       S    S      S        S         S      S  S    S       S         S       
+2024-02-23 07:26:00,539 ========================================================================================================================
+2024-02-23 07:26:00,539 Logging Sequence: 13August_2011_Saturday_tagesschau-1409
+2024-02-23 07:26:00,539 	Gloss Reference :	SPEZIELL SUEDOST KOENNEN ORT UNWETTER REGEN HAGEL STURM KOENNEN
+2024-02-23 07:26:00,539 	Gloss Hypothesis:	******** ******* ******* *** ******** ***** ***** ***** *******
+2024-02-23 07:26:00,539 	Gloss Alignment :	D        D       D       D   D        D     D     D     D      
+2024-02-23 07:26:00,539 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:26:00,541 	Text Reference  :	besonders in  der **** **** ***** südosthälfte lokale unwetter mit starkregen hagel und     sturmböen *******
+2024-02-23 07:26:00,541 	Text Hypothesis :	********* und der wind weht mäßig bis          frisch auf      den bergen     sind  schwere sturmböen möglich
+2024-02-23 07:26:00,541 	Text Alignment  :	D         S       I    I    I     S            S      S        S   S          S     S                 I      
+2024-02-23 07:26:00,541 ========================================================================================================================
+2024-02-23 07:26:00,542 Logging Sequence: 07October_2012_Sunday_tagesschau-3026
+2024-02-23 07:26:00,542 	Gloss Reference :	TAG KLAR STERN SEHEN KOENNEN FROST
+2024-02-23 07:26:00,542 	Gloss Hypothesis:	*** **** ***** ***** ******* *****
+2024-02-23 07:26:00,542 	Gloss Alignment :	D   D    D     D     D       D    
+2024-02-23 07:26:00,542 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:26:00,543 	Text Reference  :	in der teilweise klaren nacht gibt es **** örtlich leichten frost
+2024-02-23 07:26:00,543 	Text Hypothesis :	** *** ********* ****** ***** und  es wird auch    sehr     kühl 
+2024-02-23 07:26:00,543 	Text Alignment  :	D  D   D         D      D     S       I    S       S        S    
+2024-02-23 07:26:00,543 ========================================================================================================================
+2024-02-23 07:26:00,543 Logging Sequence: 08October_2009_Thursday_tagesschau-5350
+2024-02-23 07:26:00,543 	Gloss Reference :	SUED REGEN KOENNEN DABEI BLITZ DONNER
+2024-02-23 07:26:00,543 	Gloss Hypothesis:	**** ***** ******* ***** ***** ******
+2024-02-23 07:26:00,543 	Gloss Alignment :	D    D     D       D     D     D     
+2024-02-23 07:26:00,543 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:26:00,545 	Text Reference  :	*** im   süden fällt zeitweise kräftiger regen vereinzelt mit blitz und donner 
+2024-02-23 07:26:00,545 	Text Hypothesis :	der wind weht  mäßig bis       frisch    und   dreht      auf west  bis südwest
+2024-02-23 07:26:00,545 	Text Alignment  :	I   S    S     S     S         S         S     S          S   S     S   S      
+2024-02-23 07:26:00,545 ========================================================================================================================
+2024-02-23 07:26:00,545 Logging Sequence: 17January_2010_Sunday_tagesschau-5555
+2024-02-23 07:26:00,546 	Gloss Reference :	SUEDWEST BISSCHEN SONNE
+2024-02-23 07:26:00,546 	Gloss Hypothesis:	******** ******** *****
+2024-02-23 07:26:00,546 	Gloss Alignment :	D        D        D    
+2024-02-23 07:26:00,546 	--------------------------------------------------------------------------------------------------------------------
+2024-02-23 07:26:00,547 	Text Reference  :	richtung südwesten bekommt auch die sonne gelegentlich eine chance
+2024-02-23 07:26:00,547 	Text Hypothesis :	und      es        wird    auch *** ***** ************ sehr kühl  
+2024-02-23 07:26:00,547 	Text Alignment  :	S        S         S            D   D     D            S    S     
+2024-02-23 07:26:00,547 ========================================================================================================================
+2024-02-23 07:26:00,575 Training ended since there were no improvements inthe last learning rate step: 0.000700
+2024-02-23 07:26:00,578 Best validation result at step      700:   3.88 eval_metric.
+2024-02-23 07:47:25,013 ------------------------------------------------------------
+2024-02-23 07:47:25,014 [DEV] partition [RECOGNITION] experiment [BW]: 1
+2024-02-23 07:49:56,384 finished in 151.3693s 
+2024-02-23 07:49:56,387 ************************************************************
+2024-02-23 07:49:56,397 [DEV] partition [RECOGNITION] results:
+	New Best CTC Decode Beam Size: 1
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+2024-02-23 07:49:56,399 ************************************************************
+2024-02-23 07:49:56,399 ------------------------------------------------------------
+2024-02-23 07:49:56,399 [DEV] partition [RECOGNITION] experiment [BW]: 2
+2024-02-23 07:54:25,502 finished in 269.1025s 
+2024-02-23 07:54:25,506 ------------------------------------------------------------
+2024-02-23 07:54:25,507 [DEV] partition [RECOGNITION] experiment [BW]: 3
+2024-02-23 08:03:24,638 finished in 539.1304s 
+2024-02-23 08:03:24,646 ------------------------------------------------------------
+2024-02-23 08:03:24,646 [DEV] partition [RECOGNITION] experiment [BW]: 4
+2024-02-23 08:17:35,663 finished in 851.0169s 
+2024-02-23 08:17:35,675 ------------------------------------------------------------
+2024-02-23 08:17:35,677 [DEV] partition [RECOGNITION] experiment [BW]: 5
+2024-02-23 08:35:50,903 finished in 1095.2263s 
+2024-02-23 08:35:50,943 ------------------------------------------------------------
+2024-02-23 08:35:50,944 [DEV] partition [RECOGNITION] experiment [BW]: 6
+2024-02-23 08:58:14,424 finished in 1343.4791s 
+2024-02-23 08:58:14,429 ------------------------------------------------------------
+2024-02-23 08:58:14,431 [DEV] partition [RECOGNITION] experiment [BW]: 7
+2024-02-23 09:24:03,915 finished in 1549.4837s 
+2024-02-23 09:24:03,919 ------------------------------------------------------------
+2024-02-23 09:24:03,919 [DEV] partition [RECOGNITION] experiment [BW]: 8
+2024-02-23 09:55:29,264 finished in 1885.3445s 
+2024-02-23 09:55:29,269 ------------------------------------------------------------
+2024-02-23 09:55:29,270 [DEV] partition [RECOGNITION] experiment [BW]: 9
+2024-02-23 10:33:47,287 finished in 2298.0173s 
+2024-02-23 10:33:47,290 ------------------------------------------------------------
+2024-02-23 10:33:47,294 [DEV] partition [RECOGNITION] experiment [BW]: 10
+2024-02-23 11:14:44,521 finished in 2457.2260s 
+2024-02-23 11:14:44,533 ============================================================
+2024-02-23 11:18:15,342 [DEV] partition [Translation] results:
+	New Best Translation Beam Size: 1 and Alpha: -1
+	BLEU-4 3.88	(BLEU-1: 10.51,	BLEU-2: 5.73,	BLEU-3: 4.51,	BLEU-4: 3.88)
+	CHRF 19.89	ROUGE 11.61
+2024-02-23 11:18:15,343 ------------------------------------------------------------
+2024-02-23 11:41:39,029 [DEV] partition [Translation] results:
+	New Best Translation Beam Size: 2 and Alpha: -1
+	BLEU-4 3.98	(BLEU-1: 10.44,	BLEU-2: 5.97,	BLEU-3: 4.66,	BLEU-4: 3.98)
+	CHRF 20.36	ROUGE 12.17
+2024-02-23 11:41:39,055 ------------------------------------------------------------
+2024-02-23 11:48:12,576 [DEV] partition [Translation] results:
+	New Best Translation Beam Size: 2 and Alpha: 1
+	BLEU-4 3.99	(BLEU-1: 10.55,	BLEU-2: 5.99,	BLEU-3: 4.67,	BLEU-4: 3.99)
+	CHRF 20.43	ROUGE 12.20
+2024-02-23 11:48:12,578 ------------------------------------------------------------
+2024-02-23 11:51:48,050 [DEV] partition [Translation] results:
+	New Best Translation Beam Size: 2 and Alpha: 2
+	BLEU-4 4.04	(BLEU-1: 10.86,	BLEU-2: 6.13,	BLEU-3: 4.75,	BLEU-4: 4.04)
+	CHRF 20.76	ROUGE 12.20
+2024-02-23 11:51:48,063 ------------------------------------------------------------
+2024-02-23 11:55:24,703 [DEV] partition [Translation] results:
+	New Best Translation Beam Size: 2 and Alpha: 3
+	BLEU-4 4.04	(BLEU-1: 10.86,	BLEU-2: 6.13,	BLEU-3: 4.75,	BLEU-4: 4.04)
+	CHRF 20.76	ROUGE 12.20
+2024-02-23 11:55:24,707 ------------------------------------------------------------
+2024-02-23 12:15:31,617 [DEV] partition [Translation] results:
+	New Best Translation Beam Size: 3 and Alpha: 2
+	BLEU-4 4.07	(BLEU-1: 10.42,	BLEU-2: 6.03,	BLEU-3: 4.74,	BLEU-4: 4.07)
+	CHRF 20.59	ROUGE 12.13
+2024-02-23 12:15:31,637 ------------------------------------------------------------
+2024-02-23 12:39:12,701 [DEV] partition [Translation] results:
+	New Best Translation Beam Size: 4 and Alpha: 2
+	BLEU-4 4.10	(BLEU-1: 10.36,	BLEU-2: 6.08,	BLEU-3: 4.77,	BLEU-4: 4.10)
+	CHRF 20.59	ROUGE 12.17
+2024-02-23 12:39:12,703 ------------------------------------------------------------
+2024-02-23 15:11:37,239 ************************************************************
+2024-02-23 15:11:37,280 [DEV] partition [Recognition & Translation] results:
+	Best CTC Decode Beam Size: 1
+	Best Translation Beam Size: 4 and Alpha: 2
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 4.10	(BLEU-1: 10.36,	BLEU-2: 6.08,	BLEU-3: 4.77,	BLEU-4: 4.10)
+	CHRF 20.59	ROUGE 12.17
+2024-02-23 15:11:37,281 ************************************************************
+2024-02-23 15:14:59,710 [TEST] partition [Recognition & Translation] results:
+	Best CTC Decode Beam Size: 1
+	Best Translation Beam Size: 4 and Alpha: 2
+	WER 100.00	(DEL: 100.00,	INS: 0.00,	SUB: 0.00)
+	BLEU-4 1.16	(BLEU-1: 7.43,	BLEU-2: 3.41,	BLEU-3: 1.79,	BLEU-4: 1.16)
+	CHRF 15.50	ROUGE 8.44
+2024-02-23 15:14:59,716 ************************************************************
